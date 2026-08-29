@@ -1,0 +1,37 @@
+===== form section =====
+
+----- contact us -----
+h1 contact us:
+    font-weight 700
+    font-family - poppins, sans-serif
+    color - rgb(252, 96, 73)
+    h2 contact: 
+        font-weight - 700
+        font-family - poppins, sans-serif
+        color - rgb(40, 40, 40)
+
+----- form -----
+form's inputs:
+font weight - 500
+font-family - poppins, sans-serif
+color and border - rgb(146, 146, 146)
+
+captcha failed to load message:
+font-weight - 400
+font-family - poppins, sans-serif
+color - rgb(255, 0, 0)
+
+----- button -----
+submit button:
+font family - Arial
+font-weight - 600
+color and border - rgb(252, 96, 73)
+
+
+===== location section =====
+h2 location:
+font weight - 700
+font-family - poppins, sans-serif
+color - rgb(40, 40, 40)
+
+all font-weights = 700,500,400,600 = normal,medium,semi bold,bold
