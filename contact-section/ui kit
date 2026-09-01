@@ -1,11 +1,11 @@
 ===== form section =====
 
 ----- contact us -----
-h1 contact us:
+h2 contact us:
     font-weight 700
     font-family - poppins, sans-serif
     color - rgb(252, 96, 73)
-    h2 contact: 
+    h3 contact: 
         font-weight - 700
         font-family - poppins, sans-serif
         color - rgb(40, 40, 40)
@@ -29,7 +29,7 @@ color and border - rgb(252, 96, 73)
 
 
 ===== location section =====
-h2 location:
+h3 location:
 font weight - 700
 font-family - poppins, sans-serif
 color - rgb(40, 40, 40)
