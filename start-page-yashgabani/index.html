@@ -17,7 +17,8 @@
 
     <!-- ===== font-awesome icon ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <style>
         /* ===== removes extra space from elements ===== */
         * {
@@ -142,7 +143,7 @@
         }
 
         main div i {
-            font-size: 200px;
+            font-size: 200px !important;
             color: #f44336;
             float: right;
         }
@@ -174,6 +175,47 @@
             padding: 0px;
             float: right;
             margin-right: 25px;
+         }
+
+         main div:nth-of-type(2) {
+            height: 560px;
+         }
+
+         /* ===== footer section ===== */
+         footer div:nth-of-type(1) {
+            background-color: #666666;
+            padding: 64px 16px;
+         }
+
+         footer div:nth-of-type(1) p {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            margin: 16px;
+            color: #ffffff;
+         }
+
+         footer div:nth-of-type(2) {
+            padding: 65px 16px;
+         }
+
+         footer ul li {
+            float: left;
+            display: flex;
+            font-size: 24px !important;
+         }
+
+         footer div p, footer div a {
+            text-align: center;
+            font-size: 15px;
+            font-family: "Lato", sans-serif;
+            color: #757575;
+         }
+
+         footer .icons {
+            color: #666666;
+            justify-content: center;
+            display: flex;
          }
     </style>    
 </head>
@@ -216,5 +258,25 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
      </main>
+
+     <!-- ===== footer section ===== -->
+      <footer>
+        <div>
+            <p>Quote of the day: live life</p>
+        </div>
+
+        <div>
+            <ul class="icons">
+                <li><i class="fa fa-facebook-official w3-hover-opacity"></i></li>
+                <li><i class="fa fa-instagram w3-hover-opacity"></i></li>
+                <li><i class="fa fa-snapchat w3-hover-opacity"></i></li>
+                <li><i class="fa fa-pinterest-p w3-hover-opacity"></i></li>
+                <li><i class="fa fa-twitter w3-hover-opacity"></i></li>
+                <li><i class="fa fa-linkedin w3-hover-opacity"></i></li>
+            </ul>
+
+            <br><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </div>
+      </footer>
 </body>
 </html> 
