@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
+    <!-- ===== font-awesome icon ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <style>
         /* ===== removes extra space from elements ===== */
         * {
@@ -49,7 +52,8 @@
             font-size: 18px;
             padding: 12px 0px;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-            position: relative;
+            position: sticky;
+            top: 0;
         }
 
         /* ----- highlights active page link ----- */
@@ -95,14 +99,14 @@
         }
 
          .startpage {
-            padding: 102px 16px;
+            padding: 123px 16px;
             background-color: #f44336;
             text-align: center;
         }       
 
-        /* h1, .startpage p, button {
-            margin-bottom: 38px;
-        } */
+        h1 {
+            margin-top: -3%;
+        }
 
         button:hover {
             background-color: #CCCCCC;
@@ -113,7 +117,7 @@
         h2 {
             font-family: "Montserrat", sans-serif;
             font-size: 36px;
-            margin: 10px 0px;
+            margin: 3px 0px 0px 16px;
             font-weight: 400;
         }
 
@@ -124,14 +128,22 @@
         main p {
             font-size: 18px;
             margin: 10px 0px;
-            padding: 32px 0px;
+            padding: 32px 0px 0px 16px;
+            max-width: 600px;
         }
 
-        p:nth-of-type(2) {
+        main p:nth-of-type(2) {
             color: #757575;
             font-size: 15px;
             margin: 15px 0px;
-            padding: 0px;
+            padding: 0px 0px 0px 16px;
+            max-width: 565px;
+        }
+
+        i {
+            color: #f44336;
+            font-size: 200px;
+            float: right;
         }
     </style>    
 </head>
@@ -159,10 +171,13 @@
 
     <!-- ===== main section ===== -->
      <main>
-        <br><br><br><br>
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div>
+            <br><br><br>
+            <h2>Lorem Ipsum</h2>
+            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
      </main>
 </body>
 </html>
