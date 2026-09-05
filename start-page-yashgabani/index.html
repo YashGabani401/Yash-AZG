@@ -21,6 +21,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            line-height: 1.5;
         }
 
         /* ===== to fix float parent element height =====  */
@@ -30,7 +31,7 @@
             clear: both;
         }
 
-        /* ===== header ===== */    
+        /* ===== header section ===== */    
         .navbar ul li {
             float: left;
             list-style: none;
@@ -46,7 +47,7 @@
             background-color: #f44336;
             font-family: "Montserrat", sans-serif;
             font-size: 18px;
-            padding: 15px 0px;
+            padding: 12px 0px;
             box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
             position: relative;
         }
@@ -69,49 +70,75 @@
 
         /* ----- header sub-section ----- */
         h1 {
-            text-align: center;
             color: #ffffff;
             font-family: "Montserrat", sans-serif;
             font-size: 64px;
             font-weight: 400;
+            margin: 16px;
         }
 
         .startpage p {
-            text-align: center;
             color: white;
             font-family: "Lato", sans-serif;
             font-size: 24px;
+            margin: 24px 0px;
         }
 
         button {
-            padding: 14px 24px;
+            padding: 12px 24px;
             color: #ffffff;
             background-color: #000000;
             font-family: "Montserrat", sans-serif;
             font-size: 18px;
             border: none;
-            display: block;
-            margin: 0 auto;
+            margin-top: 16px;
         }
 
          .startpage {
-            padding: 95px 16px;
+            padding: 102px 16px;
             background-color: #f44336;
+            text-align: center;
         }       
 
-        h1, .startpage p, button {
-            margin-bottom: 40px;
-        }
+        /* h1, .startpage p, button {
+            margin-bottom: 38px;
+        } */
 
         button:hover {
             background-color: #CCCCCC;
             color: black;
         }
+
+        /* ===== main section ===== */
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 36px;
+            margin: 10px 0px;
+            font-weight: 400;
+        }
+
+        main p {
+            font-family: "Lato", sans-serif;
+        }
+
+        main p {
+            font-size: 18px;
+            margin: 10px 0px;
+            padding: 32px 0px;
+        }
+
+        p:nth-of-type(2) {
+            color: #757575;
+            font-size: 15px;
+            margin: 15px 0px;
+            padding: 0px;
+        }
     </style>    
 </head>
 <body>
+    <!-- ===== header section ===== -->
     <header>
-        <!-- ===== header navigation-bar ===== -->
+        <!-- ----- header navigation-bar ----- -->
         <div class="navbar clearfix">
             <ul>
                 <li><a href="" class="active">Home</a></li>
@@ -129,5 +156,13 @@
             <button type="button">Get Started</button>
         </div>
     </header>
+
+    <!-- ===== main section ===== -->
+     <main>
+        <br><br><br><br>
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     </main>
 </body>
 </html>
