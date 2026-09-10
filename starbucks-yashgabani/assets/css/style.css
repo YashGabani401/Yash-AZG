@@ -228,6 +228,26 @@ li.float-left {
     color: #ffffff;
 }
 
+.social-icon {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    color: #212121;
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.normalise {
+    text-transform: none;
+}
+
 /* ===== hover effect ===== */
 .btn-2:hover {
     background-color: #004d34;
@@ -479,10 +499,6 @@ footer {
     margin: 16px 0px 4px;
 }
 
-.normalise {
-    text-transform: none;
-}
-
 .footer-section > div:nth-child(2) ul li:nth-child(4) a {
     display: inline-block;
     max-width: 164px;
@@ -508,23 +524,7 @@ footer {
     bottom: 1px;
 }
 
-.social-icon {
-    display: inline-block;
-    padding: 8px;
-    border-radius: 50%;
-    color: #212121;
-    text-decoration: none;
-}
-
-.social-icon i {
-    font-size: 32px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-}
-
-/* ====== hover effect ===== */
+/* ====== hover effects ===== */
 .footer-section-2 a:hover {
     text-decoration: underline;
     transition: 0.3s all ease;
