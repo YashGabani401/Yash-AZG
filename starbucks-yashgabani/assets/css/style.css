@@ -77,7 +77,7 @@ p {
 
 h2 {
     color: #ffffff;
-    margin: 63px 0px 24px 23px;
+    margin: 63px 0px 24px 6px;
     text-align: center;
 }
 
@@ -112,8 +112,8 @@ li.float-left a {
 }
 
 .para-md {
-    padding: 0px 0px 37px 28px;
-    max-width: 570px;
+    padding: 0px 0px 36px 0px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.75;
@@ -126,7 +126,7 @@ li.float-left a {
 
 .btn-2 {
     padding: 7px 16px;
-    margin: 32px 0px 0px 25px;
+    margin: 32px 0px 0px -2px;
     border-radius: 50px;
     border: 1px solid white;
     font-size: 16px;
@@ -136,6 +136,12 @@ li.float-left a {
 .card {
     width: 100%;
     display: block;
+}
+
+/* ===== hover effect ===== */
+.btn-2:hover {
+    background-color: #004d34;
+    transition: 0.3s all ease;
 }
 
 /* ===== header section ===== */
@@ -291,6 +297,23 @@ header ul:last-child li:nth-of-type(2) {
     right: 19px;
 }
 
+/* ===== hover effects ===== */
+header ul:first-child li:not(:first-child) a:hover,
+header ul:nth-child(2) li:first-child a:hover {
+    color: #00754A;
+    transition: 0.3s all ease;
+}
+
+header ul:nth-child(2) li:nth-child(2) a:hover {   
+    background-color: #E9E9E9;
+    transition: 0.3s all ease;
+}
+
+header ul:nth-child(2) li:last-child a:hover {
+    background-color: #4B4B4B;
+    transition: 0.3s all ease;
+}
+
 /* ===== main ===== */
 
 /* ===== hero section ===== */
@@ -307,7 +330,7 @@ header ul:last-child li:nth-of-type(2) {
     font-weight: 700;
     position: relative;
     top: 15px;
-    right: 13px;
+    right: 12px;
     line-height: 1.75;
 }
 
@@ -328,21 +351,30 @@ header ul:last-child li:nth-of-type(2) {
     font-weight: 600;
 }
 
+/* ===== hover effect ===== */
+.hero-section a:hover {
+    background-color: #006242;
+    transition: 0.3s all ease;
+}
+
 /* ===== sub-section =====  */
 .sub-section div:last-child {
     background-color: #006242;
     padding: 32px 48px 388px;
     height: 370px;
-    width: 40%;
+    width: 50%;
     float: left;
 }
 
 .sub-section div:nth-child(1) {
     float: left;
-    width: 60%;
+    width: 50%;
 }
 
 .sub-section {
     text-align: center;
     margin-top: 32px;
+    max-width: 1536px;
+    width: 100%;
+    padding: 0px 56px 0px 40px;
 }
