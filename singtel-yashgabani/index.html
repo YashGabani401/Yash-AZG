@@ -76,7 +76,8 @@
          font-weight: 700;
       }
 
-      h1, h2 {
+      h1,
+      h2 {
          font-weight: 900;
       }
 
@@ -86,7 +87,7 @@
 
       li {
          float: left;
-         margin-left: 9px;
+         margin-left: 16px;
       }
 
       /* ===== classes ===== */
@@ -123,37 +124,81 @@
          float: right;
       }
 
-                                    /* ===== main ===== */
-               /* ===== header-section ===== */
+      a.active {
+         color: #000000;
+      }
+
+      /* ===== main ===== */
+
+      /* ===== header-section ===== */
       header {
          background-color: #ffffff;
          z-index: 9998;
          position: sticky;
          top: 0;
+         height: 109px;
       }
 
       .navbar {
          padding: 16px 24px;
+         max-width: 1325px;
+         margin: 0 auto;
       }
 
-      header div:nth-of-type(2) img {
+      header .section-1 img {
          height: 40px;
       }
 
-      .ht37 {
-            padding: 0px 0px 16px;
+      header .section-2 {
+         max-width: 1000px;
+         margin-left: 857px;
       }
 
-      .ht58 {
-         padding: 0px 8px;
-         height: 3vh;
+      header .section-2 li:nth-of-type(6) {
+         position: relative;
+         margin-right: 8px;
       }
 
-      .navbar div:nth-of-type(2) {
-         padding: 0px 8px;
+      header .section-2 li:last-child,
+      header .section-2 li:nth-of-type(6) {
+         position: relative;
+         left: 298px;
+         top: 28px;
       }
 
-               /* ===== hero-section ====== */
+      header .section-2 li:not(:last-child, :nth-of-type(6)) {
+         position: relative;
+         top: 2px;
+         margin-left: 21px;
+         right: 25px;
+      }
+
+      header .section-1 li:not(:first-child) {
+         position: relative;
+         top: 53px;
+         margin-left: 18px;
+         right: 8px;
+      }
+
+      header .section-1 li:first-child {
+         position: relative;
+         top: 37px;
+         right: 6px;
+      }
+
+      /* ===== hover effect ===== */
+      header li:not(.section-2:last-child, :nth-of-type(6)) a:hover {
+         color: #000000;
+         transition: 0.3s all ease;
+      }
+
+      header .section-2 li:last-child img:hover,
+      header .section-2 li:nth-of-type(6) img:hover {
+         transform: scale(0.9);
+         transition: 0.3s all ease;
+      }
+
+      /* ===== hero-section ====== */
       .hero-section {
          background-image: url(./assets/images/hero-banner.webp);
          height: 480px;
@@ -162,51 +207,41 @@
 </head>
 
 <body>
-   <header class="navbar clearfix"> 
-         <div class="ht37">
-            <div class="ht58">
-            </div>
-         
-            <div>
-               <ul class="float-right">
-                  <li><a href="">Personal</a></li>
-                  <li><a href="">Business</a></li>
-                  <li><a href="">Digital InfraCo</a></li>
-                  <li><a href="">Support</a></li>
-                  <li><a href="">About Us</a></li>
-               </ul>
-            </div>
-         </div>
+   <header class="navbar clearfix">
+      <section class="section-1">
+         <ul>
+            <li><a href="">
+                  <img src="./assets/images/singtel-logo.png" alt="singtel-logo">
+               </a>
+            </li>
+            <li><a href="">Products & Services</a></li>
+            <li><a href="">SMB</a></li>
+            <li><a href="">Enterprise</a></li>
+            <li><a href="">Insights</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Why Us</a></li>
+         </ul>
+      </section>
 
-         <div>
-            <ul>
-               <li><a href="">
-                     <img src="./assets/images/singtel-logo.png" alt="singtel-logo">
-                  </a>
-               </li>
-               <li><a href="">Products & Services</a></li>
-               <li><a href="">SMB</a></li>
-               <li><a href="">Enterprise</a></li>
-               <li><a href="">Insights</a></li>
-               <li><a href="">Support</a></li>
-               <li><a href="">Why Us</a></li>
-            </ul>
-         </div>
-
-         <div class="float-right">
-            <ul>
-               <li>
-                  <a href="">
-                     <img src="./assets/icons/search.svg" alt="search-icon">
-                  </a>
-               </li>
-               <li>
-                  <a href="">
-                     <img src="./assets/icons/shop.svg" alt="shop-icon">
-                  </a>
-               </li> 
-            </ul>
-         </div>
+      <section class="section-2 right-nav">
+         <ul class="float-right">
+            <li><a href="">Personal</a></li>
+            <li><a href="" class="active">Business</a></li>
+            <li><a href="">Digital InfraCo</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">About Us</a></li>
+            <li>
+               <a href="">
+                  <img src="./assets/icons/search.svg" alt="search-icon">
+               </a>
+            </li>
+            <li>
+               <a href="">
+                  <img src="./assets/icons/shop.svg" alt="shop-icon">
+               </a>
+            </li>
+         </ul>
+      </section>
    </header>
 
    <main>
