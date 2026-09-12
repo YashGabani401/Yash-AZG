@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Singtel Business</title>
+
+   <style>
+      /* ===== font-family Lato ===== */
+      @font-face {
+         font-family: 'Lato';
+         src: url('./assets/plugins/fonts/Lato/Lato-Black.eot');
+         src: url('./assets/plugins/fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+            url('./assets/plugins/fonts/Lato/Lato-Black.woff2') format('woff2'),
+            url('./assets/plugins/fonts/Lato/Lato-Black.woff') format('woff'),
+            url('./assets/plugins/fonts/Lato/Lato-Black.ttf') format('truetype'),
+            url('./assets/plugins/fonts/Lato/Lato-Black.svg#Lato-Black') format('svg');
+         font-weight: 900;
+         font-style: normal;
+      }
+
+      @font-face {
+         font-family: 'Lato';
+         src: url('./assets/plugins/fonts/Lato/Lato-Bold.eot');
+         src: url('./assets/plugins/fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+            url('./assets/plugins/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+            url('./assets/plugins/fonts/Lato/Lato-Bold.woff') format('woff'),
+            url('./assets/plugins/fonts/Lato/Lato-Bold.ttf') format('truetype'),
+            url('./assets/plugins/fonts/Lato/Lato-Bold.svg#Lato-Bold') format('svg');
+         font-weight: 700;
+         font-style: normal;
+      }
+
+      @font-face {
+         font-family: 'Lato';
+         src: url('./assets/plugins/fonts/Lato/Lato-Regular.eot');
+         src: url('./assets/plugins/fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+            url('./assets/plugins/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+            url('./assets/plugins/fonts/Lato/Lato-Regular.woff') format('woff'),
+            url('./assets/plugins/fonts/Lato/Lato-Regular.ttf') format('truetype'),
+            url('./assets/plugins/fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+         font-weight: 400;
+         font-style: normal;
+      }
+
+      /* ===== Custom Styles ===== */
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         font-family: 'Lato', sans-serif;
+         font-size: 18px;
+         font-weight: 400;
+         color: #ffffff;
+      }
+
+      h1 {
+         font-size: 48px;
+      }
+
+      a {
+         color: #70707A;
+         text-decoration: none;
+      }
+
+      h2 {
+         font-size: 40px;
+      }
+
+      h3 {
+         font-size: 24px;
+         font-weight: 700;
+      }
+
+      h1, h2 {
+         font-weight: 900;
+      }
+
+      ul {
+         list-style-type: none;
+      }
+
+      li {
+         float: left;
+         margin-left: 9px;
+      }
+
+      /* ===== classes ===== */
+      .para-lng {
+         color: #222222;
+      }
+
+      .right-nav {
+         font-size: 14px;
+      }
+
+      button {
+         font-weight: 700;
+      }
+
+      .container {
+         max-width: 1140px;
+         width: 100%;
+         margin: 0 auto;
+         padding: 0;
+      }
+
+      .clearfix::after {
+         content: '';
+         display: block;
+         clear: both;
+      }
+
+      .float-left {
+         float: left;
+      }
+
+      .float-right {
+         float: right;
+      }
+
+                                    /* ===== main ===== */
+               /* ===== header-section ===== */
+      header {
+         background-color: #ffffff;
+         z-index: 9998;
+         position: sticky;
+         top: 0;
+      }
+
+      .navbar {
+         padding: 16px 24px;
+      }
+
+      header div:nth-of-type(2) img {
+         height: 40px;
+      }
+
+      .ht37 {
+            padding: 0px 0px 16px;
+      }
+
+      .ht58 {
+         padding: 0px 8px;
+         height: 3vh;
+      }
+
+      .navbar div:nth-of-type(2) {
+         padding: 0px 8px;
+      }
+
+               /* ===== hero-section ====== */
+      .hero-section {
+         background-image: url(./assets/images/hero-banner.webp);
+         height: 480px;
+      }
+   </style>
+</head>
+
+<body>
+   <header class="navbar clearfix"> 
+         <div class="ht37">
+            <div class="ht58">
+            </div>
+         
+            <div>
+               <ul class="float-right">
+                  <li><a href="">Personal</a></li>
+                  <li><a href="">Business</a></li>
+                  <li><a href="">Digital InfraCo</a></li>
+                  <li><a href="">Support</a></li>
+                  <li><a href="">About Us</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <div>
+            <ul>
+               <li><a href="">
+                     <img src="./assets/images/singtel-logo.png" alt="singtel-logo">
+                  </a>
+               </li>
+               <li><a href="">Products & Services</a></li>
+               <li><a href="">SMB</a></li>
+               <li><a href="">Enterprise</a></li>
+               <li><a href="">Insights</a></li>
+               <li><a href="">Support</a></li>
+               <li><a href="">Why Us</a></li>
+            </ul>
+         </div>
+
+         <div class="float-right">
+            <ul>
+               <li>
+                  <a href="">
+                     <img src="./assets/icons/search.svg" alt="search-icon">
+                  </a>
+               </li>
+               <li>
+                  <a href="">
+                     <img src="./assets/icons/shop.svg" alt="shop-icon">
+                  </a>
+               </li> 
+            </ul>
+         </div>
+   </header>
+
+   <main>
+      <section class="hero-section">
+         <div class="container">
+            <h1>Singtel Business</h1>
+
+            <p>Power up solutions and insights that drive growth for your business.</p>
+         </div>
+      </section>
+   </main>
+</body>
+
+</html>
