@@ -55,7 +55,10 @@
          font-family: 'Lato', sans-serif;
          font-size: 18px;
          font-weight: 400;
-         color: #ffffff;
+         color: #222222;
+         overflow-x: hidden;
+         line-height: 1.5;
+         letter-spacing: 0.01em;
       }
 
       h1 {
@@ -74,11 +77,14 @@
       h3 {
          font-size: 24px;
          font-weight: 700;
+         line-height: 1.25;
       }
 
       h1,
       h2 {
          font-weight: 900;
+         letter-spacing: 0;
+         line-height: 1.2;
       }
 
       ul {
@@ -91,10 +97,6 @@
       }
 
       /* ===== classes ===== */
-      .para-lng {
-         color: #222222;
-      }
-
       .right-nav {
          font-size: 14px;
       }
@@ -104,7 +106,7 @@
       }
 
       .container {
-         max-width: 1140px;
+         max-width: 1190px;
          width: 100%;
          margin: 0 auto;
          padding: 0;
@@ -128,14 +130,14 @@
          color: #000000;
       }
 
-      /* ===== main ===== */
+      main .hero-section div {
+         max-width: 1140px;
+      }
 
-      /* ===== header-section ===== */
+      /* ===== header ===== */
       header {
          background-color: #ffffff;
          z-index: 9998;
-         position: sticky;
-         top: 0;
          height: 109px;
       }
 
@@ -162,22 +164,23 @@
       header .section-2 li:last-child,
       header .section-2 li:nth-of-type(6) {
          position: relative;
-         left: 298px;
-         top: 28px;
+         left: 306px;
+         top: 24px;
+         line-height: normal;
+         margin-left: 16px;
       }
 
       header .section-2 li:not(:last-child, :nth-of-type(6)) {
          position: relative;
-         top: 2px;
-         margin-left: 21px;
-         right: 25px;
+         margin-left: 16px;
+         right: 10px;
       }
 
-      header .section-1 li:not(:first-child) {
+      header .section-1 li {
          position: relative;
-         top: 53px;
-         margin-left: 18px;
-         right: 8px;
+         top: 50px;
+         margin-left: 16px;
+         left: 2px;
       }
 
       header .section-1 li:first-child {
@@ -186,7 +189,11 @@
          right: 6px;
       }
 
-      /* ===== hover effect ===== */
+      header .section-2 li {
+         letter-spacing: 0.03em;
+      }
+
+      /* ===== hover effects ===== */
       header li:not(.section-2:last-child, :nth-of-type(6)) a:hover {
          color: #000000;
          transition: 0.3s all ease;
@@ -198,6 +205,8 @@
          transition: 0.3s all ease;
       }
 
+      /* ===== main ===== */
+
       /* ===== hero-section ====== */
       .hero-section {
          background-image: url(./assets/images/hero-banner.webp);
@@ -205,9 +214,11 @@
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
+         color: #ffffff;
+         max-width: 1519px;
       }
 
-      .hero-section h1, p {
+      .hero-section h1, .hero-section p {
          position: relative;
          top: 189px;
          right: 7px;
@@ -217,6 +228,47 @@
          top: 208px;
       }
 
+      /* ===== sub-section ===== */
+      .sub-section {
+         margin-top: 64px;
+      }
+
+      .sub-section .container > div {
+         float: left;
+         width: 32.49%; /* 3 columns per row */
+         margin-right: 2%;
+         margin-bottom: 32px;
+         border-radius: 8px;
+         box-shadow: rgb(0 0 0 / 12%) 0px 3px 8px 0px;
+         margin-top: 80px;
+         overflow: hidden;
+      }
+
+      .sub-section .container > div:nth-child(3n+1) {
+         clear: left;
+      }
+
+      .sub-section .container > div img {
+         width: 100%;
+      }
+
+      .sub-section h2 {
+         position: relative;
+         left: 155px;
+      }
+
+      .sub-section a {
+         padding: 8px 24px;
+         background-color: #242328;
+         color: #ffffff;
+         border-radius: 40px;
+         letter-spacing: 0.02em;
+         line-height: normal;
+      }
+
+      .sub-section .card {
+         padding: 16px;
+      }
    </style>
 </head>
 
@@ -264,6 +316,65 @@
             <h1>Singtel Business</h1>
 
             <p>Power up solutions and insights that drive growth for your business.</p>
+         </div>
+      </section>
+
+      <section class="sub-section clearfix">
+         <h2>SMB Promotions</h2>
+         <div class="container">
+            <div>
+               <img src="./assets/images/smb-1.jpg" alt="smb-promotions">
+               <div class="card">
+               <h3>Startups</h3>
+               <p class="para-lng">Enjoy 55% OFF all-in Biz Starter Pack at $109/mth—with broadband, telephone line and mobile SIM & more.</p>
+               <a href="">Learn more</a>
+               </div>
+            </div>
+
+            <div>
+               <img src="./assets/images/smb-2.jpg" alt="smb-promotions">
+               <div class="card">
+               <h3>Broadband</h3>
+               <p class="para-lng">Save up to 40% OFF all-in biz broadband on Singapore’s No.1 network—FREE mesh, phone line & more.</p>
+               <a href="">Learn more</a>
+               </div>
+            </div>
+
+            <div>
+               <img src="./assets/images/smb-3.jpg" alt="smb-promotions">
+               <div class="card">
+               <h3>Mobile</h3>
+               <p class="para-lng">Save big on business mobile—online exclusive deals with up to $300 off phones + FREE perks on 5G+ plans.</p>
+               <a href="">Learn more</a>
+               </div>
+            </div>
+
+            <div>
+               <img src="./assets/images/smb-4.jpg" alt="smb-promotions">
+               <div class="card">
+               <h3>Telephony & Conferencing</h3>
+               <p class="para-lng">Stay connected with reliable business phone lines from $11.99/mth—unlimited local calls & seamless scalability.</p>
+               <a href="">Learn more</a>
+               </div>
+            </div>
+
+            <div>
+               <img src="./assets/images/smb-5.jpg" alt="smb-promotions">
+               <div class="card">
+               <h3>Tech Solutions</h3>
+               <p class="para-lng">From hardware to security—complete ICT solutions to power growth with up to 90% government subsidies.</p>
+               <a href="">Learn more</a>
+               </div>
+            </div>
+
+            <div>
+               <img src="./assets/images/smb-6.jpg" alt="smb-promotions">
+               <div class="card">
+               <h3>Singtel Business eShop</h3>
+               <p class="para-lng">Unlock exclusive online deals on broadband, mobile & telephony—exclusive gifts, special numbers & extra savings online.</p>
+               <a href="">Shop now</a>
+ 
+ </div>           </div>
          </div>
       </section>
    </main>
