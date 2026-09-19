@@ -1,0 +1,111 @@
+/* ===== Font-family Caprasimo ===== */
+@font-face {
+    font-family: 'Caprasimo';
+    src: url('../plugins/fonts/caprasimo/Caprasimo-Regular.eot');
+    src: url('../plugins/fonts/caprasimo/Caprasimo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/caprasimo/Caprasimo-Regular.woff2') format('woff2'),
+        url('../plugins/fonts/caprasimo/Caprasimo-Regular.woff') format('woff'),
+        url('../plugins/fonts/caprasimo/Caprasimo-Regular.ttf') format('truetype'),
+        url('../plugins/fonts/caprasimo/Caprasimo-Regular.svg#Caprasimo-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ===== Font-family Outfit ===== */
+@font-face {
+    font-family: 'Outfit';
+    src: url('../plugins/fonts/outfit/Outfit-Bold.eot');
+    src: url('../plugins/fonts/outfit/Outfit-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/outfit/Outfit-Bold.woff2') format('woff2'),
+        url('../plugins/fonts/outfit/Outfit-Bold.woff') format('woff'),
+        url('../plugins/fonts/outfit/Outfit-Bold.ttf') format('truetype'),
+        url('../plugins/fonts/outfit/Outfit-Bold.svg#Outfit-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../plugins/fonts/outfit/Outfit-Medium.eot');
+    src: url('../plugins/fonts/outfit/Outfit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/outfit/Outfit-Medium.woff2') format('woff2'),
+        url('../plugins/fonts/outfit/Outfit-Medium.woff') format('woff'),
+        url('../plugins/fonts/outfit/Outfit-Medium.ttf') format('truetype'),
+        url('../plugins/fonts/outfit/Outfit-Medium.svg#Outfit-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../plugins/fonts/outfit/Outfit-Regular.eot');
+    src: url('../plugins/fonts/outfit/Outfit-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/outfit/Outfit-Regular.woff2') format('woff2'),
+        url('../plugins/fonts/outfit/Outfit-Regular.woff') format('woff'),
+        url('../plugins/fonts/outfit/Outfit-Regular.ttf') format('truetype'),
+        url('../plugins/fonts/outfit/Outfit-Regular.svg#Outfit-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ===== Custom styles ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 140%;
+    font-size: 14;
+    letter-spacing: -2.5%;
+    color: #000000;
+    font-weight: 700;
+}
+
+button {
+    background-color: #FFC800;
+    border-radius: 4px;
+    padding: 8px 12px 6px;
+}
+
+/* ===== classes ===== */
+.display {
+    font-size: 30;
+    line-height: 92%;
+    letter-spacing: -3%;
+    font-weight: 400;
+}
+
+.heading-1 {
+    font-size: 50;
+    letter-spacing: -2%;
+}
+
+.heading-2 {
+    font-size: 40;
+    line-height: 110%;
+}
+
+.para-2 {
+    font-size: 24;
+    letter-spacing: -1%;
+    font-weight: 500;
+}
+.caption-2 {
+    font-size: 18;
+    letter-spacing: 0%;
+}
+
+.heading-3, .caption-1 {
+    letter-spacing: 2%;
+}
+
+.heading-4 {
+    font-size: 15;
+}
+
+.para-1 {
+    font-size: 16;
+    font-weight: 400;
+}

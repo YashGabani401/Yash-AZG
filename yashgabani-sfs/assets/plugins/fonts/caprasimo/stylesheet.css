@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Caprasimo';
+    src: url('Caprasimo-Regular.eot');
+    src: url('Caprasimo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Caprasimo-Regular.woff2') format('woff2'),
+        url('Caprasimo-Regular.woff') format('woff'),
+        url('Caprasimo-Regular.ttf') format('truetype'),
+        url('Caprasimo-Regular.svg#Caprasimo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
