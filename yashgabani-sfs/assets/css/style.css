@@ -57,10 +57,11 @@
 
 body {
     line-height: 140%;
-    font-size: 14;
+    font-size: 14px;
     letter-spacing: -2.5%;
     color: #000000;
     font-weight: 700;
+    font-family: 'Outfit', sans-serif;
 }
 
 button {
@@ -69,31 +70,42 @@ button {
     padding: 8px 12px 6px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
 /* ===== classes ===== */
 .display {
-    font-size: 30;
+    font-size: 30px;
     line-height: 92%;
     letter-spacing: -3%;
     font-weight: 400;
+    font-family: 'Caprasimo', sans-serif;
 }
 
 .heading-1 {
-    font-size: 50;
+    font-size: 50px;
     letter-spacing: -2%;
 }
 
 .heading-2 {
-    font-size: 40;
+    font-size: 40px;
     line-height: 110%;
 }
 
 .para-2 {
-    font-size: 24;
+    font-size: 24px;
     letter-spacing: -1%;
     font-weight: 500;
 }
+
 .caption-2 {
-    font-size: 18;
+    font-size: 18px;
     letter-spacing: 0%;
 }
 
@@ -102,10 +114,29 @@ button {
 }
 
 .heading-4 {
-    font-size: 15;
+    font-size: 15px;
 }
 
 .para-1 {
-    font-size: 16;
+    font-size: 16px;
     font-weight: 400;
+}
+
+.txt-upper {
+    text-transform: uppercase;
+}
+
+/* ===== header section ===== */
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul > ul li {
+    margin: 31px 40px 31px 0px;
+}
+
+.nav-links > ul > li {
+    margin: 27px 0px 27px 40px;
 }
