@@ -59,7 +59,7 @@ body {
     line-height: 140%;
     font-size: 14px;
     letter-spacing: -2.5%;
-    color: #000000;
+    color: #2C2825;
     font-weight: 700;
     font-family: 'Outfit', sans-serif;
 }
@@ -68,6 +68,10 @@ button {
     background-color: #FFC800;
     border-radius: 4px;
     padding: 8px 12px 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2C2825 !important;
 }
 
 a {
@@ -77,6 +81,10 @@ a {
 
 li {
     list-style-type: none;
+}
+
+h1 {
+    margin: 44px 0px 80px 40px;
 }
 
 /* ===== classes ===== */
@@ -93,6 +101,10 @@ li {
     letter-spacing: -2%;
 }
 
+.heading-1, .heading-2 {
+    color: #171615;
+}
+
 .heading-2 {
     font-size: 40px;
     line-height: 110%;
@@ -102,6 +114,7 @@ li {
     font-size: 24px;
     letter-spacing: -1%;
     font-weight: 500;
+
 }
 
 .caption-2 {
@@ -109,12 +122,14 @@ li {
     letter-spacing: 0%;
 }
 
-.heading-3, .caption-1 {
+.heading-3,
+.caption-1 {
     letter-spacing: 2%;
 }
 
 .heading-4 {
     font-size: 15px;
+    color: #000000;
 }
 
 .para-1 {
@@ -126,7 +141,18 @@ li {
     text-transform: uppercase;
 }
 
-/* ===== header section ===== */
+.caption-1 {
+    color: #575757;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+                                        /* ===== header ===== */
 .nav-links ul {
     display: flex;
     justify-content: space-between;
@@ -140,3 +166,23 @@ li {
 .nav-links > ul > li {
     margin: 27px 0px 27px 40px;
 }
+
+                                        /* ===== main ===== */
+
+/* ===== hero section ===== */
+.hero-section img {
+    width: 446px;
+    height: 500px;
+    margin: 0px 20px 70px 80px;
+}
+
+.hero-section > div {
+    display: flex;
+    margin-left: 40px;
+}
+
+.hero-section div div {
+    flex-direction: column;
+}
+
+/* ===== main-1 section ====== */
