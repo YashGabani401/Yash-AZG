@@ -76,7 +76,7 @@ button {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #2C2825;
 }
 
 li {
@@ -114,6 +114,8 @@ h1 {
     font-size: 24px;
     letter-spacing: -1%;
     font-weight: 500;
+    max-width: 600px;
+    line-height: normal;
 
 }
 
@@ -129,7 +131,7 @@ h1 {
 
 .heading-4 {
     font-size: 15px;
-    color: #000000;
+    color: rgba(0,0,0,0.6);
 }
 
 .para-1 {
@@ -146,11 +148,15 @@ h1 {
 }
 
 .container {
-    max-width: 1120px;
+    max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    padding-left: 13%;
 }
+
+/* .main-1, .main-2 {
+    justify-content: flex-end;  
+    display: flex;
+} */
 
                                         /* ===== header ===== */
 .nav-links ul {
@@ -171,8 +177,6 @@ h1 {
 
 /* ===== hero section ===== */
 .hero-section img {
-    width: 446px;
-    height: 500px;
     margin: 0px 20px 70px 80px;
 }
 
@@ -186,3 +190,36 @@ h1 {
 }
 
 /* ===== main-1 section ====== */
+.main-1 img {
+    margin: 70px 10px 70px;
+}
+
+.main-1 div p {
+    max-width: 950px;
+}
+
+/* .main-2 li {
+    list-style-type:disc;
+} */
+
+/* ===== main-2 section ===== */
+.main-2 img {
+    margin: 70px 0px;
+}
+
+.main-2 button {
+    margin: 70px 0px 180px;
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.main-2 button::before {
+    content: '';
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #000000;
+    margin-bottom: 4px;
+}
