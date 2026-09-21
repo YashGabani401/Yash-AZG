@@ -72,6 +72,8 @@ button {
     font-size: 14px;
     font-weight: 700;
     color: #2C2825 !important;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 a {
@@ -81,10 +83,31 @@ a {
 
 li {
     list-style-type: none;
+    transition: 0.3s ease-in-out;
 }
 
 h1 {
     margin: 44px 0px 80px 40px;
+}
+
+hr {
+    max-width: 95%;
+    position: relative;
+    left: 40px;
+}
+
+/* ====== hover effects =====  */
+li:hover {
+    transform: scale(1.1);
+}
+
+.navbar nav > ul > li:hover {
+    transform: rotate(360deg);
+}
+
+button:hover {
+    background-color: #fbc70b;
+    transform: scale(0.9);
 }
 
 /* ===== classes ===== */
@@ -153,11 +176,6 @@ h1 {
     padding-left: 13%;
 }
 
-/* .main-1, .main-2 {
-    justify-content: flex-end;  
-    display: flex;
-} */
-
                                         /* ===== header ===== */
 .nav-links ul {
     display: flex;
@@ -197,10 +215,6 @@ h1 {
 .main-1 div p {
     max-width: 950px;
 }
-
-/* .main-2 li {
-    list-style-type:disc;
-} */
 
 /* ===== main-2 section ===== */
 .main-2 img {
