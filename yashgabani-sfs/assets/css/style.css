@@ -223,3 +223,9 @@ h1 {
     background-color: #000000;
     margin-bottom: 4px;
 }
+
+/* ===== footer ===== */
+footer {
+    display: flex;
+    justify-content: center;
+}
