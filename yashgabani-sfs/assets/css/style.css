@@ -270,7 +270,58 @@ main > div p {
 }
 
 /* ===== footer ===== */
-footer {
+.footer-section {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.footer-card {
+    position: relative;
+    max-width: 1120px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.footer-card img {
+    width: 100%;;
+    object-fit: cover;
+    display: block;
+}
+
+.footer-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 100%);
+    color: #ffffff;
+    inset: 0;
+}
+
+.footer-logo {
+    font-size: 80px;
+    color: #ffffff;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.footer-bottom-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-bottom-text span,
+.footer-bottom-text a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -1%;
 }
