@@ -177,6 +177,13 @@ button:hover {
 }
 
                                         /* ===== header ===== */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 9998;
+}
+
 .nav-links ul {
     display: flex;
     justify-content: space-between;
@@ -192,19 +199,28 @@ button:hover {
 }
 
                                         /* ===== main ===== */
-
 /* ===== hero section ===== */
 .hero-section img {
-    margin: 0px 20px 70px 80px;
+    margin: 0px 20px 70px 150px;
 }
 
 .hero-section > div {
     display: flex;
     margin-left: 40px;
+    align-items: flex-start;
 }
 
 .hero-section div div {
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.hero-section div div {
+    position: sticky;
+    top: 90px;
+}
+
+.hero-section div div {
+    height: 15vh;
 }
 
 /* ===== main-1 section ====== */
@@ -214,6 +230,21 @@ button:hover {
 
 .main-1 div p {
     max-width: 950px;
+}
+
+main {
+    position: relative;
+}
+
+main > div {
+    height: 335vh;
+    position: absolute;
+    left: 40px;
+}
+
+main > div p {
+    position: sticky;
+    top: 90px;
 }
 
 /* ===== main-2 section ===== */
