@@ -1,0 +1,83 @@
+/* ===== Custom Styles ===== */
+h1 {
+    margin: 44px 0px 80px 40px;
+}
+
+/* ===== classes ===== */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding-left: 13%;
+}
+
+                                        /* ===== main ===== */
+
+/* ===== hero section ===== */
+.hero-section img {
+    margin: 0px 20px 70px 150px;
+}
+
+.hero-section > div {
+    display: flex;
+    margin-left: 40px;
+    align-items: flex-start;
+}
+
+.hero-section div div {
+    flex-direction: row;
+}
+
+.hero-section div div {
+    position: sticky;
+    top: 90px;
+}
+
+.hero-section div div {
+    height: 15vh;
+}
+
+/* ===== main-1 section ====== */
+.main-1 img {
+    margin: 70px 10px 70px;
+}
+
+.main-1 div p {
+    max-width: 950px;
+}
+
+main {
+    position: relative;
+}
+
+main > div {
+    height: 335vh;
+    position: absolute;
+    left: 40px;
+}
+
+main > div p {
+    position: sticky;
+    top: 90px;
+}
+
+/* ===== main-2 section ===== */
+.main-2 img {
+    margin: 70px 0px;
+}
+
+.main-2 button {
+    margin: 70px 0px 180px;
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.main-2 button::before {
+    content: '';
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #000000;
+    margin-bottom: 4px;
+}

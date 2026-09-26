@@ -1,0 +1,30 @@
+/* ===== Custom Styles ===== */
+h1 {
+    display: none;
+}
+
+/* ===== hero-section ===== */
+.hero-section img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hero-section > img {
+    margin-top: 68px;
+    margin-bottom: 44px;
+}
+
+.hero-section div div {
+    height: 150px;
+    width: 150px;
+    background-color: #FFC800;
+    border-radius: 11.7px;
+}
+
+/* .hero-section div div::before {
+    content: '';
+    height: 100px;
+    width: 100px;
+    background-color: #FFC800;
+} */
