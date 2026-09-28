@@ -73,17 +73,18 @@ button {
     font-weight: 700;
     color: #2C2825 !important;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.7s all ease-in-out;
 }
 
 a {
     text-decoration: none;
     color: #2C2825;
+    transition: 0.7s all ease-in-out;
 }
 
 li {
     list-style-type: none;
-    transition: 0.3s ease-in-out;
+    transition: 0.7s all ease-in-out;
 }
 
 hr {
@@ -151,18 +152,56 @@ hr {
     color: #575757;
 }
 
+.active a {
+    color: #ff00c8;
+}
+
 /* ====== hover effects =====  */
 li:hover {
     transform: scale(1.1);
 }
 
-.navbar nav > ul > li:hover {
-    transform: rotate(360deg);
+.logo-item {
+    transition: 0.7s all ease-in-out;
+    transform-origin: left center;
+}
+
+.logo-item:hover {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 50px #ff00c8);
+}
+
+a:hover,
+span a:hover {
+    color: #ff00c8;
 }
 
 button:hover {
-    background-color: #fbc70b;
-    transform: scale(0.9);
+    background-color: #171615;
+    color: #FFC800 !important;
+    transform: scale(0.96) translateY(0);
+    box-shadow: 0 4px 12px rgba(23, 22, 21, 0.15);
+}
+
+.link-item:hover a {
+    position: relative;
+    bottom: 3px;
+}
+
+.link-item a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #ff00c8;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    transition: 0.7s all ease;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
                                         /* ===== header ===== */
