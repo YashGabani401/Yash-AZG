@@ -1,0 +1,28 @@
+/* ===== Custom Styles ===== */
+h1 {
+    margin: 44px 0px 80px 40px;
+}
+
+                                        /* ===== main ===== *
+/* ===== hero-section ===== */
+.hero-section > div {
+    display: flex;
+    margin-left: 40px;
+    align-items: flex-start;
+}
+
+main {
+    position: relative;
+}
+
+main > div {
+    height: 350vh;
+    position: absolute;
+    left: 40px;
+}
+
+main > div p {
+    position: sticky;
+    top: 90px;
+    max-width: 100px;
+}
