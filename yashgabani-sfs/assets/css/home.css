@@ -11,6 +11,10 @@ h1 {
     letter-spacing: 2%;
 }
 
+.main-4-mg {
+    margin: 40px 0px 80px;
+}
+
                                         /* ===== main ===== */
 
 /* ===== hero-section ===== */
@@ -77,4 +81,33 @@ h1 {
 /* ===== main-1 section ===== */
 .main-1 {
     text-align: center;
+    margin: 120px 0px;
+}
+
+.main-1 h2 {
+    margin: 20px auto;
+    max-width: 780px;
+}
+
+/* ===== main-3 section ===== */
+.main-3 {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.main-3 p {
+    margin-top: 40px;
+}
+
+/* ===== main-4 section ===== */
+.main-4 {
+    text-align: center;
+}
+
+.main-4 img {
+    margin: 80px 0px;
+}
+
+.main-4 p {
+    margin-top: 30px;
 }

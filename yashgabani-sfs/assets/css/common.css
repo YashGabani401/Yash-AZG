@@ -74,6 +74,19 @@ button {
     color: #2C2825 !important;
     cursor: pointer;
     transition: 0.7s all ease-in-out;
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+button::before {
+    content: '';
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #000000;
+    margin-bottom: 4px;
 }
 
 a {
