@@ -122,6 +122,7 @@ hr {
 .heading-1 {
     font-size: 50px;
     letter-spacing: -2%;
+    line-height: 110%;
 }
 
 .heading-1, .heading-2 {
@@ -149,6 +150,7 @@ hr {
 .heading-3,
 .caption-1 {
     letter-spacing: 2%;
+    line-height: 140%;
 }
 
 .heading-4 {
@@ -157,7 +159,7 @@ hr {
 }
 
 .para-1 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -171,6 +173,11 @@ hr {
 
 .clr-black {
     color: #000000;
+}
+
+.florist {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* ====== hover effects =====  */
@@ -276,7 +283,7 @@ header {
 }
 
 .footer-logo {
-    font-size: 80px;
+    font-size: 117.03px;
     color: #ffffff;
     align-self: center;
     margin-top: auto;
