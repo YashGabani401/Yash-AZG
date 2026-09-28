@@ -156,6 +156,10 @@ hr {
     color: #ff00c8;
 }
 
+.clr-black {
+    color: #000000;
+}
+
 /* ====== hover effects =====  */
 li:hover {
     transform: scale(1.1);
