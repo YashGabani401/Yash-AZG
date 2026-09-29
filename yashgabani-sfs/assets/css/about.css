@@ -49,6 +49,7 @@ main {
     position: relative;
 }
 
+/* ===== sticky element ===== */
 main > div {
     height: 350vh;
     position: absolute;
