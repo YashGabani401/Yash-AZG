@@ -3,26 +3,93 @@ h1 {
     margin: 44px 0px 80px 40px;
 }
 
-                                        /* ===== main ===== *
-/* ===== hero-section ===== */
-.hero-section > div {
-    display: flex;
-    margin-left: 40px;
-    align-items: flex-start;
+/* ===== classes ===== */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding-left: 14%;
 }
 
+                                        /* ===== main ===== *
+/* ===== hero-section ===== */
 main {
     position: relative;
 }
 
-main > div {
-    height: 350vh;
-    position: absolute;
-    left: 40px;
+.details {
+    display: flex;
+    gap: 6px;
 }
 
+.hero-section section img {
+    margin: 15px 20px 60px 0px;
+}
+
+.hero-section section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-section section div:nth-of-type(7) img,
+.hero-section section div:nth-of-type(8) img,
+.hero-section section div:nth-of-type(9) img {
+    margin-bottom: 200px;
+}
+
+/* ===== sticky element ===== */
 main > div p {
     position: sticky;
     top: 90px;
     max-width: 100px;
+}
+
+main > div {
+    height: 170vh;
+    position: absolute;
+    left: 40px;
+}
+
+/* ===== main-1 section ===== */
+.main-1 section > div > div {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.main-1 section div div.service-content {
+    padding-left: 1%;
+}
+
+.main-1 section > div p,
+.main-1 section > div h2 {
+    max-width: 460px;
+}
+
+.main-1 hr {
+    max-width: 96%;
+    position: relative;
+    left: 15px;
+    margin-bottom: 30px;
+}
+
+.main-1 section > div p {
+    margin-top: 24px;
+}
+
+.main-1 section .service-content img {
+    margin-bottom: 70px;
+}
+
+/* ===== sticky element ===== */
+.main-1 > div p {
+    position: sticky;
+    top: 90px;
+    max-width: 100px;
+}
+
+.main-1 > div {
+    height: 214vh;
+    position: absolute;
+    left: 40px;
 }
