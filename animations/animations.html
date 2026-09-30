@@ -99,24 +99,23 @@
             position: absolute;
             border: 2px solid black;
             top: 54%;
-            transform: translateY(-50%);
-            animation: flip-card 5s linear 0s none normal;
+            transform: translateY(-50%) rotateY(0deg);
+            animation: flip-card 5s linear none normal;
             transform-style: preserve-3d;
         }
         
         /* ===== text elements ====== */
         .flip-wrapper h3 {
-            position: absolute;
+            position: relative;
             top: 45%;
-            left: 40%;
         }
 
         /* ===== animations ===== */
         @keyframes flip-card {
-            0% {
+            0%, 80% {
                 transform: translateY(-50%) rotateY(0deg);
             } 100% {
-                transform: translateY(-50%) rotateY(360deg);
+                transform: translateY(-50%) rotateY(180deg);
             }
         }
     </style>
@@ -145,7 +144,7 @@
             <h2>2. Flip Card (3D Transform)</h2>
 
             <div class="card">
-                <h3>Question</h3>
+                <h3>Front</h3>
             </div>
         </section>
     </section>
