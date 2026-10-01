@@ -132,6 +132,41 @@
                 transform: translateY(-50%) rotateY(360deg);
             }
         }
+
+        /* ===== typing text effect ===== */
+        .typing-wrapper .container {
+            height: 20vh;
+        }
+
+        /* ===== text elements ===== */
+        .typing-wrapper p {
+            width: 100%;
+            position: absolute;
+            top: 53%;
+            max-width: 98%;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 1px solid black;
+            animation: typing-text 10s steps(1000), blink-cursor 0.75s step-end infinite ;
+        }
+
+        /* ===== animations ===== */
+        @keyframes typing-text {
+            0% {
+                width: 0%;
+            } 100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-cursor {
+            0%, 100% {
+                border-color: transparent;
+            }
+            50% {
+                border-color: black;
+            }
+        }
     </style>
 </head>
 <body>
@@ -168,6 +203,15 @@
                     <h3>Back</h3>
                 </div>
             </div>
+        </section>
+    </section>
+
+    <!-- ===== flip card (3D Transform) ===== -->   
+    <section class="typing-wrapper">  
+        <section class="container">
+            <h2>3. Typing Text Effect</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sequi eum quaerat officia, quod, laudantium eos modi tempora obcaecati itaque molestias recusandae!</p>
         </section>
     </section>
 </body>
