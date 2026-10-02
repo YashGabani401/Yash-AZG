@@ -140,6 +140,10 @@
              position: relative;
         }
 
+        .flip-wrapper h2 {
+            animation: flip-text 5s infinite;
+        }
+
         /* ===== animations ===== */
         @keyframes flip-card {
             0% {
@@ -154,6 +158,14 @@
             }
             100% {
                 transform: translateY(-50%) rotateY(360deg);
+            }
+        }
+
+        @keyframes flip-text {
+            0% {
+                transform: rotateY(0deg);
+            } 100% {
+                transform: rotateY(360deg);
             }
         }
 
@@ -174,6 +186,13 @@
             animation: typing-text 10s steps(1000), blink-cursor 0.75s step-end infinite ;
         }
 
+        .typing-wrapper h2 {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing-text 10s steps(1000);
+        }
+
         /* ===== animations ===== */
         @keyframes typing-text {
             0% {
@@ -188,7 +207,7 @@
                 border-color: transparent;
             }
             50% {
-                border-color: black;
+                border-color: white;
             }
         }
 
