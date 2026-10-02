@@ -16,6 +16,7 @@
             text-align: center;
             background: radial-gradient(black, white);
             color: white;
+            overflow-x: hidden;
         }
 
         p {
@@ -108,6 +109,16 @@
             transform-style: preserve-3d;
         }
 
+        .flip-wrapper section .card div h3 {
+             top: 45%;
+             position: relative;
+        }
+
+        .flip-wrapper h2 {
+            animation: flip-text 5s infinite;
+        }
+
+        /* ===== front-back cards ===== */
         .flip-wrapper .card,
         .flip-wrapper .front,
         .flip-wrapper .back {
@@ -133,15 +144,6 @@
         .flip-wrapper .front {
             background-color: green;
             background: radial-gradient(black 15%, green 50%, red 72%);
-        }
-
-        .flip-wrapper section .card div h3 {
-             top: 45%;
-             position: relative;
-        }
-
-        .flip-wrapper h2 {
-            animation: flip-text 5s infinite;
         }
 
         /* ===== animations ===== */
@@ -274,7 +276,7 @@
         .spinner-wrapper .spinner-2 .ball-4 {
             position: relative
         }
-
+        
         .spinner-wrapper .spinner-2 .ball-1 {
             bottom: 70%;
             right: 100%;
@@ -299,6 +301,7 @@
             animation: loading-ball-4 1s infinite;
         }
 
+        /* ===== color ===== */
         .spinner-wrapper .spinner-2 .ball-1,
         .spinner-wrapper .spinner-2 .ball-4 {
             background-color: white;
@@ -349,7 +352,7 @@
             }
         }
 
-        /* ===== bouncing ball ===== */
+                                                /* ===== bouncing ball ===== */
         .ball-wrapper .ball {
             width: 90px;
             height: 90px;
@@ -365,6 +368,7 @@
             height: 50vh;
         }
 
+        /* ===== animations ===== */
         @keyframes ball-jump {
           0% {
             top: 0%;
@@ -382,6 +386,182 @@
             top: 0;
             transform: scaleX(1);
           }
+        }
+
+        /* ===== animated story ===== */
+        .story-wrapper .container {
+            height: 93vh;
+            color: black;
+            overflow: hidden;
+        }
+
+        .story-wrapper .elements img {
+            height: 40%;
+            width: 25%;
+            position: absolute;
+        }
+
+        /* ===== day-night ===== */
+        .story-wrapper .day {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -3;
+            border-radius: 21px;
+        }
+
+        .story-wrapper .sun {
+            width: 20% !important;
+            height: 40% !important;
+            left: 40%;
+            animation: sun 20s;
+            top: 0;
+            z-index: -4;
+        }
+
+        .story-wrapper .day {
+            animation: day 25s;
+            filter: brightness(0.1);
+        }
+
+        .story-wrapper .moon {
+            width: 10% !important;
+            height: 20% !important;
+            left: 45%;
+            animation: moon 25s;
+            top: 6%;
+            z-index: 0;
+        }
+
+        /* ===== clouds ===== */
+        .story-wrapper .cloud {
+            left: 0;
+            animation: cloud 20s;
+        }
+
+        .story-wrapper .cloud,
+        .story-wrapper .cloud-2 {
+            top: 0;
+            width: 20% !important;
+            height: 25% !important;
+            z-index: -4;
+        }
+
+        .story-wrapper .cloud-2 {
+            left: 50%;
+            animation: cloud-2 20s;
+        }
+
+        /* ===== other ===== */
+        .story-wrapper .car {
+            bottom: 3%;
+            animation: car 20s;
+        }
+
+        .story-wrapper .car,
+        .story-wrapper .bird {
+            right: -23%;
+        }
+
+        .story-wrapper .bird {
+            width: 10% !important;
+            height: 20% !important;
+        }
+
+        .story-wrapper .bird {
+            animation: bird 15s ease-out;
+            z-index: -2;
+        }
+
+        /* ===== animations ===== */
+        @keyframes car {
+            0%, 13% {
+                right: -23%;
+            } 50% {
+                right: 35%;
+            } 100% {
+                right: 100%;
+            }
+        }
+
+        @keyframes bird {
+            0%, 30% {
+                top: 0;
+                right: -23%;
+            } 50% {
+                top: 20%;
+            } 100% {
+                right: 100%;
+                top: 0;
+            }
+        }
+
+        /* ===== day-night ===== */
+        @keyframes day {
+            0% {
+                filter: brightness(0.1);
+            } 30%, 50% {
+                filter: brightness(1);
+            } 100% {
+                filter: brightness(0.1);
+            }
+        }
+
+        @keyframes sun {
+            0% {
+                left: -20%;
+                top: 20%;
+                z-index: -3;
+            } 20%, 80% {
+                left: 40%;
+                top: -5%;
+                z-index: -3;
+            } 100% {
+                left: 100%;
+                top: 20%;
+                z-index: -3;
+            }
+        }
+
+        @keyframes moon {
+            0%, 65% {
+                left: -20%;
+                top: 40%;
+                z-index: -3;
+            } 100% {
+                left: 45%;
+                top: 6%;
+                z-index: -3;
+            }
+        }
+
+        /* ===== cloud ===== */
+        @keyframes cloud {
+            0% {
+                z-index: -4;
+            } 15% {
+                left: 0;
+            } 50% {
+                left: 50%;
+                z-index: -1;
+            } 100% {
+                left: 80%;
+            }
+        }
+
+        @keyframes cloud-2 {
+            0% {
+                z-index: -4;
+            } 15% {
+                left: 50%;
+            } 50% {
+                left: 85%;
+                z-index: -1;
+            } 100% {
+                left: 100%;
+            }
         }
     </style>
 </head>
@@ -435,11 +615,14 @@
         <section class="container">
             <h2>4. Loading Spinner</h2>
 
+            <!-- ===== first loading spinner ===== -->
             <div class="spinner">
                 <div class="inner-ring"></div>
             </div>
 
+            <!-- ===== second loading spinner ===== -->
             <div class="spinner-2">
+                <!-- ==== loader balls ==== -->
                 <div class="ball-1"></div>
                 <div class="ball-2"></div>
                 <div class="ball-3"></div>
@@ -448,11 +631,32 @@
         </section>
     </section>
 
-    <section class="ball-wrapper">  
+    <section class="ball-wrapper">
         <section class="container">
             <h2>5. Bouncing Ball</h2>
 
             <div class="ball"></div>
+        </section>
+    </section>
+
+    <section class="story-wrapper">  
+        <section class="container">
+            <h2>5. Animated Story</h2>
+
+            <div class="story">
+                <!-- ===== main background image ====== -->
+                <img class="day" src="./assets/images/day.jfif" alt="sky-road">
+
+                <!-- ===== other small images ===== -->
+                <section class="elements">
+                    <img class="cloud" src="./assets/images/clouds.png" alt="cloud">
+                    <img class="bird" src="./assets/images/bird.png" alt="bird">
+                    <img class="car" src="./assets/images/car.png" alt="car">
+                    <img class="cloud-2" src="./assets/images/clouds.png" alt="cloud-2">
+                    <img class="sun" src="./assets/images//sun.png" alt="sun">
+                    <img class="moon" src="./assets/images/moon.png" alt="moon">
+                </section>
+            </div>
         </section>
     </section>
 </body>
