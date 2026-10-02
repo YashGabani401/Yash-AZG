@@ -14,6 +14,8 @@
 
         body {
             text-align: center;
+            background: radial-gradient(black, white);
+            color: white;
         }
 
         p {
@@ -42,6 +44,8 @@
             padding: 10px;
             border-radius: 25px;
             position: relative;
+            /* background-color:  bla */
+            color: white;
         }
 
                                                 /* ===== rainbow progress bar ===== */
@@ -118,16 +122,17 @@
             height: 100%;
             border-radius: 21px;
             color: white;
-            background: radial-gradient(black 15%, green 50%, red 72%);
         }
 
         .flip-wrapper .back {
             transform: rotateY(180deg);
             background-color: red;
+            background: radial-gradient(black 15%, red 50%, green 72%);
         }
 
         .flip-wrapper .front {
             background-color: green;
+            background: radial-gradient(black 15%, green 50%, red 72%);
         }
 
         .flip-wrapper section .card div h3 {
@@ -191,8 +196,6 @@
         /* ===== first spinner ===== */
         .spinner-wrapper .container {
             height: 40vh;
-            background-color: black;
-            color: white;
         }
 
         .spinner-wrapper .spinner {
@@ -341,8 +344,6 @@
 
         .ball-wrapper .container {
             height: 50vh;
-            background-color: black;
-            color: white;
         }
 
         @keyframes ball-jump {
