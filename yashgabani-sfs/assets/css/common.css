@@ -74,7 +74,7 @@ button {
     font-weight: 700;
     color: #2C2825 !important;
     cursor: pointer;
-    transition: 0.7s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     gap: 8px;
     display: inline-flex;
     align-items: center;
@@ -93,12 +93,12 @@ button::before {
 a {
     text-decoration: none;
     color: #2C2825;
-    transition: 0.7s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 li {
     list-style-type: none;
-    transition: 0.7s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 hr {
@@ -169,7 +169,7 @@ hr {
 }
 
 .active a {
-    color: #ff00c8;
+    color: #FFC800;
 }
 
 .clr-black {
@@ -187,18 +187,17 @@ li:hover {
 }
 
 .logo-item {
-    transition: 0.7s all ease-in-out;
-    transform-origin: left center;
+    transition: 0.3s all ease-in-out;
+    transform-origin: center;
 }
 
 .logo-item:hover {
     transform: scale(1.04);
-    filter: drop-shadow(0 0 50px #ff00c8);
 }
 
 a:hover,
 span a:hover {
-    color: #ff00c8;
+    color: #FFC800;
 }
 
 button:hover {
@@ -217,12 +216,12 @@ button:hover {
     content: '';
     width: 0%;
     height: 3px;
-    background-color: #ff00c8;
+    background-color: #FFC800;
     position: absolute;
     left: 0;
     bottom: -1px;
     border-radius: 2px;
-    transition: 0.7s all ease;
+    transition: 0.3s all ease;
 }
 
 a:hover::after {
