@@ -104,16 +104,35 @@
             transform-style: preserve-3d;
         }
 
+        .flip-wrapper .card,
+        .flip-wrapper .front,
+        .flip-wrapper .back {
+            border-radius: 21px;
+            width: 100%;
+        }
+
         .flip-wrapper .front,
         .flip-wrapper .back {
             backface-visibility: hidden;
             position: absolute;
-            top: 45%;
-            left: 45%;
+            height: 100%;
+            border-radius: 21px;
+            color: white;
+            background: radial-gradient(black 15%, green 50%, red 72%);
         }
 
         .flip-wrapper .back {
             transform: rotateY(180deg);
+            background-color: red;
+        }
+
+        .flip-wrapper .front {
+            background-color: green;
+        }
+
+        .flip-wrapper section .card div h3 {
+             top: 45%;
+             position: relative;
         }
 
         /* ===== animations ===== */
@@ -307,7 +326,43 @@
                 right: 0;
             }
         }
-        
+
+        /* ===== bouncing ball ===== */
+        .ball-wrapper .ball {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-image: radial-gradient(white 10%, red 50%);
+            margin-top: 36px;
+            filter: blur(1px);
+            position: absolute;
+            animation: ball-jump 2s infinite;
+        }
+
+        .ball-wrapper .container {
+            height: 50vh;
+            background-color: black;
+            color: white;
+        }
+
+        @keyframes ball-jump {
+          0% {
+            top: 0%;
+            animation-timing-function: ease;
+            transform: scaleX(1.2);
+          } 45% {
+            animation-timing-function: ease-out;
+          } 49% {
+            transform: scaleX(1);
+          } 50% {
+            top: 63%;
+            transform: scaleX(1.2);
+            animation-timing-function: ease-out;
+          } 100% {
+            top: 0;
+            transform: scaleX(1);
+          }
+        }
     </style>
 </head>
 <body>
@@ -370,6 +425,14 @@
                 <div class="ball-3"></div>
                 <div class="ball-4"></div>
             </div>
+        </section>
+    </section>
+
+    <section class="ball-wrapper">  
+        <section class="container">
+            <h2>5. Bouncing Ball</h2>
+
+            <div class="ball"></div>
         </section>
     </section>
 </body>
