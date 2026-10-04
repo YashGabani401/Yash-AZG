@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+
+    <!-- ===== Lato Font-Family ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== Montserrat Font-Family ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FontAwesome Icons ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ===== Custom Styles ===== -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1,
+        h2 {
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin: 10px 0 42px;
+        }
+
+        section,
+        .icon-part,
+        footer {
+            padding: 64px 0;
+        }
+
+        p {
+            font-family: "Lato", sans-serif;
+        }
+
+        .container {
+            max-width: 1012px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .para-md {
+            font-size: 18px;
+            margin-bottom: 48px;
+        }
+
+        .para-sm {
+            font-size: 15px;
+            color: #757575;
+            margin-bottom: 16px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .w-33 {
+            width: 33.33%;
+        }
+
+        .w-66 {
+            width: 66.66%;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #f44336;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            position: relative;
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        header ul a {
+            padding: 12px 24px;
+            color: #FFFFFF;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        header ul a.active,
+        header ul a:hover {
+            color: #000000;
+            background-color: #FFFFFF;
+        }
+
+        header ul a.active:hover,
+        .hero-section button:hover {
+            color: #000000;
+            background-color: #CCCCCC;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background-color: #f44336;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 144px 0 128px;
+        }
+
+        .hero-section h1 {
+            font-size: 64px;
+            text-transform: uppercase;
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin: 24px 0 40px;
+        }
+
+        .hero-section button {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            line-height: 1.5;
+            font-family: "Montserrat", sans-serif;
+            cursor: pointer;
+        }
+
+        /* Lorem Section Styles */
+        .lorem-section .icon-part {
+            text-align: center;
+        }
+
+        .lorem-section .icon-part i {
+            font-size: 200px;
+            color: #f44336;
+        }
+
+        /* Cup Lorem Section Styles */
+        .cup-lorem-section {
+            background-color: #f1f1f1;
+        }
+
+        .cup-lorem-section .icon-part {
+            padding-right: 16px;
+        }
+
+        /* Quote Section Styles */
+        .quote-section {
+            background-color: #000000;
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
+
+        .quote-section p {
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+            font-size: 24px;
+            margin: 16px 0;
+        }
+
+        /* Footer Style */
+        footer {
+            text-align: center;
+            opacity: 0.6;
+        }
+
+        footer .social-media {
+            padding: 36px 0;
+        }
+
+        footer .social-media i {
+            font-size: 24px;
+        }
+
+        footer .social-media i:hover {
+            opacity: 0.6;
+        }
+
+        footer p {
+            margin: 15px 0;
+        }
+
+        footer p a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        /* ===== media-query ===== */
+        @media (max-width:767.98px) {
+            .hero-section h1 {
+                font-size: 54px;
+            }
+            .hero-section p {
+                font-size: 20px;
+            }
+            .hero-section button {
+                font-size: 14px;
+                padding: 8px 17px;
+            }
+            header ul a {
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 35px;
+            }
+            .para-md {
+                font-size: 17px;
+            }
+            .para-sm {
+                font-size: 14px;
+            }
+            .lorem-section .icon-part i {
+                font-size: 190px;
+            }
+            .quote-section p {
+                font-size: 22px;
+            }
+            section, .icon-part, footer {
+                padding: 54px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="clearfix">
+                <li class="float-left">
+                    <a href="" class="active">Home</a>
+                </li>
+                <li class="float-left">
+                    <a href="">Link 1</a>
+                </li>
+                <li class="float-left">
+                    <a href="">Link 2</a>
+                </li>
+                <li class="float-left">
+                    <a href="">Link 3</a>
+                </li>
+                <li class="float-left">
+                    <a href="">Link 4</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <h1>start page</h1>
+                <p class="para-lg">Template by w3.css</p>
+                <button type="button">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Hook Lorem Section -->
+        <section class="lorem-section">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="float-left w-66">
+                        <h2>Lorem Ipsum</h2>
+                        <p class="para-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="float-left w-33 icon-part">
+                        <i class="fa fa-anchor"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cup Lorem Section -->
+        <section class="lorem-section cup-lorem-section">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="float-left w-33 icon-part">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="float-left w-66">
+                        <h2>Lorem Ipsum</h2>
+                        <p class="para-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="para-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <p class="para-lg">Quote of the day: live life</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>
+                Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
