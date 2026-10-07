@@ -1,0 +1,193 @@
+                                        /* ===== font-family ===== */
+/* ===== Integral CF ===== */
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../plugins/fonts/integral-cf/FONTSPRINGDEMO-IntegralCFBoldRegular.eot');
+    src: url('../plugins/fonts/integral-cf/FONTSPRINGDEMO-IntegralCFBoldRegular.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/integral-cf/FONTSPRINGDEMO-IntegralCFBoldRegular.woff2') format('woff2'),
+        url('../plugins/fonts/integral-cf/FONTSPRINGDEMO-IntegralCFBoldRegular.woff') format('woff'),
+        url('../plugins/fonts/integral-cf/FONTSPRINGDEMO-IntegralCFBoldRegular.ttf') format('truetype'),
+        url('../plugins/fonts/integral-cf/FONTSPRINGDEMO-IntegralCFBoldRegular.svg#FONTSPRINGDEMO-IntegralCFBoldRegular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ===== Satoshi ===== */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../plugins/fonts/satoshi/Satoshi-Medium.eot');
+    src: url('../plugins/fonts/satoshi/Satoshi-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/satoshi/Satoshi-Medium.woff2') format('woff2'),
+        url('../plugins/fonts/satoshi/Satoshi-Medium.woff') format('woff'),
+        url('../plugins/fonts/satoshi/Satoshi-Medium.ttf') format('truetype'),
+        url('../plugins/fonts/satoshi/Satoshi-Medium.svg#Satoshi-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../plugins/fonts/satoshi/Satoshi-Regular.eot');
+    src: url('../plugins/fonts/satoshi/Satoshi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/satoshi/Satoshi-Regular.woff2') format('woff2'),
+        url('../plugins/fonts/satoshi/Satoshi-Regular.woff') format('woff'),
+        url('../plugins/fonts/satoshi/Satoshi-Regular.ttf') format('truetype'),
+        url('../plugins/fonts/satoshi/Satoshi-Regular.svg#Satoshi-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../plugins/fonts/satoshi/Satoshi-Bold.eot');
+    src: url('../plugins/fonts/satoshi/Satoshi-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/satoshi/Satoshi-Bold.woff2') format('woff2'),
+        url('../plugins/fonts/satoshi/Satoshi-Bold.woff') format('woff'),
+        url('../plugins/fonts/satoshi/Satoshi-Bold.ttf') format('truetype'),
+        url('../plugins/fonts/satoshi/Satoshi-Bold.svg#Satoshi-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ===== Custom Styles ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0%;
+    font-weight: 400;
+    color: #000000;
+}
+
+                                        /* ===== classes ===== */
+/* ===== common ===== */
+.h-heading,
+.h-short,
+.m-heading,
+.m-heading-short,
+.m-short2,
+.m2-heading-short,
+.m3-heading-short,
+.f-heading,
+.f2-heading {
+    font-weight: 700;
+}
+
+.h-long,
+.h-short,
+.m3-long,
+.f2-long,
+.f3-short,
+.copyright {
+    color: rgba(0,0,0, 0.6);
+}
+
+.h-long,
+.h-short,
+.m3-heading-short,
+.m3-long,
+.f2-long {
+    line-height: 22;
+}
+
+.m-short4,
+.m-btn,
+.f-heading-short,
+.h-btn,
+.f3-heading-short {
+    font-weight: 500;
+}
+
+.slider,
+.h-btn,
+.f-heading {
+    color: #ffffff;
+}
+
+.h-search-txt,
+.m-short3,
+.f-search-text {
+    color: rgba(0,0,0, 0.4);
+}
+
+.m-short,
+.f2-long,
+.copyright {
+    font-size: 14px;
+}
+
+.m-heading-short,
+.m3-heading-short {
+    font-size: 20px;
+}
+
+.m-short2,
+.m-short3 {
+    font-size: 24px;
+}
+
+.h-short,
+.f-heading {
+    font-size: 40px;
+}
+
+                                        /* ===== header ===== */
+/* ===== logo ===== */
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Integral CF', sans-serif;
+}
+
+                                        /* ===== hero-section ===== */
+.h-heading {
+    font-family: 'Integral CF', sans-serif;
+    font-size: 64px;
+    line-height: 64;
+}
+
+                                        /* ===== main ===== */
+/* ===== section-1 ===== */
+.m-heading {
+    font-family: 'Integral CF', sans-serif;
+    font-size: 48px;
+}
+
+.m-short4 {
+    font-size: 12px;
+    color: #FF3333;
+}
+
+.m-btn {
+    color: #000000;
+}
+
+/* ===== section-2 ===== */
+.m2-heading-short {
+    font-size: 36px;
+}
+
+                                        /* ===== footer ===== */
+/* ===== section-1 ===== */
+.f-heading {
+    line-height: 45;
+}
+
+/* ===== section-2 ===== */
+.f2-heading {
+    font-family: 'Integral CF', sans-serif;
+    font-size: 33.45px;
+}
+
+/* ===== section-3 ===== */
+.f3-heading-short {
+    line-height: 18;
+    letter-spacing: 3px;
+}
+
+.f3-short {
+    line-height: 19;
+}
