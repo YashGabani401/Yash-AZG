@@ -103,7 +103,8 @@
 
 .slider,
 .h-btn,
-.f-heading {
+.f-heading,
+.signup {
     color: #ffffff;
 }
 
@@ -115,7 +116,8 @@
 
 .m-short,
 .f2-long,
-.copyright {
+.copyright,
+.signup {
     font-size: 14px;
 }
 
