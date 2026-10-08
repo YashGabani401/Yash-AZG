@@ -88,6 +88,14 @@ li {
     text-decoration: underline;
 }
 
+.txt-upper {
+    text-transform: uppercase;
+}
+
+.txt-cap {
+    text-transform: capitalize;
+}
+
                                         /* ===== classes ===== */
 .h-heading,
 .h-short,
@@ -102,7 +110,6 @@ li {
 }
 
 .h-long,
-.h-short,
 .m3-long,
 .f2-long,
 .f3-short,
@@ -111,11 +118,10 @@ li {
 }
 
 .h-long,
-.h-short,
 .m3-heading-short,
 .m3-long,
 .f2-long {
-    line-height: 22;
+    line-height: 22px;
 }
 
 .m-short4,
@@ -161,6 +167,12 @@ li {
     font-size: 40px;
 }
 
+.h-btn {
+    background-color: #000000;
+    border-radius: 62px;
+    padding: 16px 54px;
+}
+
                                         /* ===== header ===== */
 /* ===== logo ===== */
 .nav-bar {
@@ -198,14 +210,6 @@ li {
     font-family: 'Integral CF', sans-serif;
 }
 
-.nav-bar > a {
-    text-transform: uppercase;
-}
-
-.nav-links ul li a {
-    text-transform: capitalize;
-}
-
 .nav-bar .nav-links span {
     position: relative;
     top: 3px;
@@ -216,15 +220,88 @@ li {
     width: 24px;
 }
 
-                                        /* ===== hero-section ===== */
+                                        /* ===== main ===== */
+/* ===== hero-section ===== */
+.hero-section h1,
+.hero-section > p,
+.hero-section > a,
+.hero-section .counter {
+    left: 100px;
+}
+
 .h-heading {
     font-family: 'Integral CF', sans-serif;
     font-size: 64px;
-    line-height: 64;
+    line-height: 64px;
 }
 
-                                        /* ===== main ===== */
-/* ===== section-1 ===== */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 663px;
+    background-repeat: no-repeat;
+    background-color: #F2F0F1;
+    position: relative;
+}
+
+.hero-section .hero-image {
+    position: absolute;
+    right: 2%;
+    height: 663px;
+    width: 1440px;
+}
+
+.hero-section h1 {
+    position: absolute;
+    top: 103px;
+    max-width: 40%;
+}
+
+.hero-section > p {
+    position: absolute;
+    top: 308px;
+    max-width: 36%;
+}
+
+.hero-section > a {
+    position: absolute;
+    top: 373px;
+}
+
+.hero-section .counter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 473px;
+}
+
+.hero-section .counter > div:nth-of-type(2),
+.hero-section .counter > div:nth-of-type(3) {
+    border-left: 1px solid rgba(0,0,0, 0.1);
+}
+
+.hero-section .counter > div {
+    padding: 0px 32px;
+}
+
+.hero-section .counter > div:first-child {
+    padding-left: 0;
+}
+
+.hero-section .star {
+    position: absolute;
+    left: 750px;
+    top: 297px;
+}
+
+.hero-section .big-star {
+    position: absolute;
+    right: 81px;
+    top: 86px;
+}
+
+/* ===== main section-1 ===== */
 .m-heading {
     font-family: 'Integral CF', sans-serif;
     font-size: 48px;
@@ -239,18 +316,18 @@ li {
     color: #000000;
 }
 
-/* ===== section-2 ===== */
+/* ===== main section-2 ===== */
 .m2-heading-short {
     font-size: 36px;
 }
 
                                         /* ===== footer ===== */
-/* ===== section-1 ===== */
+/* ===== footer section-1 ===== */
 .f-heading {
-    line-height: 45;
+    line-height: 45px;
 }
 
-/* ===== section-2 ===== */
+/* ===== footer section-2 ===== */
 .f2-heading {
     font-family: 'Integral CF', sans-serif;
     font-size: 33.45px;
@@ -258,10 +335,10 @@ li {
 
 /* ===== section-3 ===== */
 .f3-heading-short {
-    line-height: 18;
+    line-height: 18px;
     letter-spacing: 3px;
 }
 
 .f3-short {
-    line-height: 19;
+    line-height: 19px;
 }
