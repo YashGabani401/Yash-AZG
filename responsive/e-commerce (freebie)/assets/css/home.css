@@ -95,6 +95,13 @@
 }
 
 /* ===== main section-1 ===== */
+.main-1 .card-wrapper .card > div:last-of-type,
+.main-1 .card-wrapper .card > div:first-of-type,
+.main-1 .card-wrapper {
+    text-align: left;
+    display: flex;
+}
+
 .m-heading {
     font-family: 'Integral CF', sans-serif;
     font-size: 48px;
@@ -107,6 +114,43 @@
 
 .m-btn {
     color: #000000;
+}
+
+.main-1 .card > img {
+    border-radius: 20px;
+    width: 295px;
+    height: 298px;
+    margin-bottom: 16px;
+}
+
+.main-1 h2 {
+    text-align: center;
+    margin: 72px 0px 55px;
+}
+
+.main-1 .card-wrapper > .card {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main-1 .card-wrapper .card > div:first-of-type {
+    gap: 13px;
+}
+
+.main-1 .card-wrapper .card > div:last-of-type {
+    gap: 10px;
+    align-items: center;
+}
+
+.main-1 .card-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-1 .card-wrapper .card > div:first-of-type {
+    margin: 8px 0;
 }
 
 /* ===== main section-2 ===== */

@@ -63,6 +63,7 @@ body {
     letter-spacing: 0%;
     font-weight: 400;
     color: #000000;
+    overflow-x: hidden;
 }
 
 a {
@@ -94,6 +95,20 @@ li {
 
 .txt-cap {
     text-transform: capitalize;
+}
+
+.txt-line-through {
+    text-decoration: line-through;
+}
+
+.offer-txt {
+    color: #FF3333;
+    font-size: 12px;
+    background-color: rgba(255, 51, 51, 0.1);
+    border-radius: 62px;
+    width: 58px;
+    height: 28px;
+    padding: 6px 14px;
 }
 
                                         /* ===== classes ===== */
@@ -128,7 +143,8 @@ li {
 .m-btn,
 .f-heading-short,
 .h-btn,
-.f3-heading-short {
+.f3-heading-short,
+.offer-txt {
     font-weight: 500;
 }
 
