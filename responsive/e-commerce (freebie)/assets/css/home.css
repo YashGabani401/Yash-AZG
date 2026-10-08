@@ -161,3 +161,44 @@
 .m2-heading-short {
     font-size: 36px;
 }
+
+/* ===== main section-3 ===== */
+.main-3 {
+    background-color: #F0F0F0;
+    text-align: center;
+    width: 1239px;
+    margin: 0 auto;
+    padding: 70px 64px 76px;
+}
+
+.main-3 .card-wrapper > div:nth-of-type(3) {
+    width: 684px;
+}
+
+.main-3 .card-wrapper > div:nth-of-type(4) {
+    width: 407px;
+}
+
+.main-3 h3 {
+    display: inline-block;
+    position: absolute;
+    left: 36px;
+    top: 25px;
+}
+
+.main-3 .card-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-3 h2 {
+    margin: 70px 0 64px;
+    display: inline-block;
+}
+
+.main-3 .card-wrapper > div {
+    position: relative;
+}

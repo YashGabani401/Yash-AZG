@@ -119,7 +119,8 @@ li {
 .m2-heading-short,
 .m3-heading-short,
 .f-heading,
-.f2-heading {
+.f2-heading,
+.m3-heading {
     font-weight: 700;
 }
 
@@ -180,6 +181,10 @@ li {
 .h-short,
 .f-heading {
     font-size: 40px;
+}
+
+.m3-heading {
+    font-size: 36px;
 }
 
 .h-btn,
