@@ -85,7 +85,6 @@
     justify-content: center;
     background-color: #000000;
     height: 122px;
-    width: 1521px;
     margin: 0 auto;
 }
 
@@ -110,10 +109,6 @@
 .m-short4 {
     font-size: 12px;
     color: #FF3333;
-}
-
-.m-btn {
-    color: #000000;
 }
 
 .main-1 .card > img {
@@ -151,6 +146,15 @@
 
 .main-1 .card-wrapper .card > div:first-of-type {
     margin: 8px 0;
+}
+
+.main-1 > a {
+    margin: 36px 0 64px;
+    display: inline-block;
+}
+
+.main-1 {
+    text-align: center;
 }
 
 /* ===== main section-2 ===== */
