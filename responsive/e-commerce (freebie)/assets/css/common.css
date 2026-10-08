@@ -258,12 +258,102 @@ hr {
 /* ===== footer section-1 ===== */
 .f-heading {
     line-height: 45px;
+    font-family: 'Integral CF', sans-serif;
+}
+
+footer .latest-offer {
+    width: 1240px;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 36px 64px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer .latest-offer h2 {
+    max-width: 600px;
+}
+
+footer .latest-offer > div {
+    display: flex;
+    align-items: center;
+}
+
+footer .latest-offer .mail,
+footer .latest-offer .newsletter {
+    background-color: #ffffff;
+    border-radius: 62px;
+    padding: 12px 16px;
+    display: flex;
+    gap: 12px;
+    width: 349px;
+}
+
+footer .latest-offer > div {
+    flex-direction: column;
+    gap: 14px;
+}
+
+footer .latest-offer .newsletter {
+    justify-content: center;
+}
+
+footer {
+    background-color: #F0F0F0;
+    position: relative;
+    margin-top: 170px;
+    padding: 0 100px 81.97px 101px;
+}
+
+footer section:first-of-type {
+    transform: translateY(-50%);
+    position: relative;
+    margin-bottom: -40px;
+}
+
+footer > section {
+    display: flex;
 }
 
 /* ===== footer section-2 ===== */
 .f2-heading {
     font-family: 'Integral CF', sans-serif;
     font-size: 33.45px;
+}
+
+footer section:nth-of-type(2) div:nth-of-type(1) {
+    flex-direction: column;
+}
+
+footer section:nth-of-type(2) div:nth-of-type(1) p {
+    margin: 25px 0 35px;
+    max-width: 250px;
+}
+
+footer section:nth-of-type(2) div:nth-of-type(1) .icons {
+    margin-bottom: 50px;
+    flex-direction: row;
+    display: flex;
+    gap: 12px;
+}
+
+footer section:nth-of-type(2) > section > div {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(40%);
+}
+
+footer section:nth-of-type(2) > section > div {
+    display: flex;
+    margin-left: 113.5px;
+}
+
+footer section:nth-of-type(2) > section > div nav > ul > li {
+    display: flex;
+    margin-top: 26px;
 }
 
 /* ===== section-3 ===== */
@@ -274,4 +364,11 @@ hr {
 
 .f3-short {
     line-height: 19px;
+}
+
+footer section:last-of-type {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
