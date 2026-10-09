@@ -207,6 +207,17 @@ hr {
    border: 1px solid rgba(0,0,0, 0.1)
 }
 
+.arrow {
+    width: 16px;
+    height: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
                                         /* ===== header ===== */
 /* ===== logo ===== */
 .nav-bar {

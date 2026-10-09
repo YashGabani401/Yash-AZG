@@ -1,0 +1,44 @@
+                                        /* ===== main ===== */
+/* ===== navigation ===== */
+.product .navigation {
+    display: flex;
+    margin: 24px 0 0;
+    gap: 4px;
+}
+
+.product .navigation > div {
+    display: flex;
+}
+
+.product .navigation > div > img {
+    position: relative;
+    top: 4px;
+}
+
+/* ===== product view ===== */
+.product .product-view {
+    display: flex;
+    margin: 36px 0 80px;
+}
+
+.product .cloth-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.product .product-view > img {
+    margin: 0 40px 0 14px;
+}
+
+.product .product-view .cloth-description .rating {
+    margin: 14px 0 14.29px;
+    display: flex;
+    gap: 16px;
+}
+
+.product .product-view .cloth-description .offer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
