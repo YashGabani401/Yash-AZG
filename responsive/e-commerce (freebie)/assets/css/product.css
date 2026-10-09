@@ -1,3 +1,12 @@
+/* ===== Custom Styles ===== */
+h1 {
+    font-family: 'Integral CF', sans-serif;
+}
+
+.pull-hyphen {
+    letter-spacing: -0.2em; 
+}
+
                                         /* ===== main ===== */
 /* ===== navigation ===== */
 .product .navigation {
@@ -29,6 +38,8 @@
 
 .product .product-view > img {
     margin: 0 40px 0 14px;
+    width: 444px;
+    height: 530px;
 }
 
 .product .product-view .cloth-description .rating {
@@ -41,4 +52,131 @@
     display: flex;
     gap: 12px;
     align-items: center;
+}
+
+.product .product-view .cloth-description > p:first-of-type {
+    margin: 20px 0 24px;
+    max-width: 600px;
+}
+
+.product .product-view .cloth-description .color-selector > div {
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .product-view .cloth-description .color-selector div:first-of-type {
+    background-color: #4F4631;
+}
+
+.product .product-view .cloth-description .color-selector div:nth-of-type(2) {
+    background-color: #314F4A;
+}
+
+.product .product-view .cloth-description .color-selector div:last-of-type {
+    background-color: #31344F;
+}
+
+.product .product-view .cloth-description > p:nth-of-type(2) {
+    margin: 24px 0 16px;
+}
+
+.product .product-view .cloth-description .color-selector > div img {
+    height: 16px;
+    width: 16px;
+}
+
+.product .product-view .cloth-description .color-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product .product-view .cloth-description > hr:nth-of-type(2) {
+    margin: 24px 0;
+}
+
+.product .product-view .size-selector {
+    display: flex;
+    gap: 12px;
+}
+
+.product .product-view .size-selector > div {
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    padding: 12px 24px;
+    margin: 16px 0 24px;
+}
+
+.product .product-view .size-selector > div:nth-of-type(3) {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.product .product-view .cloth-description > hr:nth-of-type(3) {
+    margin: 0 0 24px;
+}
+
+.product .product-view .product-buy {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}
+
+.product .product-view .product-buy > div:first-of-type {
+    display: flex;
+    width: 170px;
+    height: 52px;
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product .product-view .product-buy > div img {
+    width: 24px;
+    height: 24px;
+}
+
+.product .product-view .product-buy > a {
+    width: 400px;
+    height: 52px;
+    border-radius: 62px;
+    text-align: center;
+}
+
+.product .navigation > div:not(:last-of-type) {
+    color: rgba(0,0,0, 0.6);
+}
+
+.product .product-view .offer p {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.product .product-view .offer p:last-of-type {
+    color: rgba(0,0,0, 0.3);
+}
+
+.product .product-view .offer a {
+    font-weight: 500;
+}
+
+.product .product-view .cloth-description > p:first-of-type {
+    line-height: 22px;
+}
+
+.product .product-view .cloth-description > p:first-of-type,
+.product .product-view .cloth-description > p:nth-of-type(2),
+.product .product-view .cloth-description > p:nth-of-type(3),
+.product .product-view .size-selector {
+    color: rgba(0,0,0, 0.6);
+}
+
+.product .product-view .product-buy .filter p,
+.product .product-view .product-buy a {
+    font-weight: 500;
 }
