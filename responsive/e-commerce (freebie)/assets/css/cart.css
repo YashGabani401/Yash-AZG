@@ -1,0 +1,66 @@
+/* ===== Custom Styles ===== */
+h1 {
+    margin: 24px 0;
+    font-family: 'Integral CF', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+                                        /* ===== main ===== */
+.navigation img {
+    width: 16px;
+    height: 16px;
+}
+
+.navigation {
+    display: flex;
+    gap: 12px;
+}
+
+.navigation > div:first-of-type {
+    display: flex;
+    gap: 4px;
+}
+
+/* ===== cloth-view ==== */
+.wrapper {
+    display: flex;
+}
+
+.wrapper .cloth-view > div {
+    display: flex;
+}
+
+.wrapper .cloth-view {
+    width: 715px;
+    display: block;
+}
+
+.cloth-view {
+    padding: 20px 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+
+.wrapper hr {
+    margin: 24px 0;
+}
+
+.cloth-view .cloth-card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.cloth-view > div:nth-of-type(3) > img:first-of-type {
+    width: 124px;
+    height: 124px;
+}
+
+.cloth-view > div > div {
+    display: flex;
+}
+
+.cloth-view > div > div:last-of-type > div div {
+    display: flex;
+    
+}
