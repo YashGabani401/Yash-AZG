@@ -218,6 +218,27 @@ hr {
     margin: 0 auto;
 }
 
+.opa {
+    color: rgba(0,0,0, 0.6);
+}
+
+.opa-font14 {
+    font-size: 14px;
+    color: rgba(0,0,0, 0.6)
+}
+
+.b-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #000000 !important;
+}
+
+.m14 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
                                         /* ===== header ===== */
 /* ===== logo ===== */
 .nav-bar {
@@ -357,6 +378,26 @@ hr {
 .cloth-products {
     text-align: center;
 }
+
+.navigation {
+    display: flex;
+    margin: 24px 0 0;
+    gap: 4px;
+}
+
+.navigation > div {
+    display: flex;
+}
+
+.navigation > div > img {
+    position: relative;
+    top: 4px;
+}
+
+.navigation > div:not(:last-of-type) {
+    color: rgba(0,0,0, 0.6);
+}
+
 
                                         /* ===== footer ===== */
 /* ===== footer section-1 ===== */
