@@ -270,7 +270,6 @@ hr {
     background-color: #ffffff;
     border: 1px solid rgba(0,0,0, 0.1);
     padding: 28px 32px 55px;
-    height: 239.58px;
 }
 
 .c-review .customer-cards {
@@ -324,6 +323,14 @@ hr {
 .cloth-products .card-wrapper > .card {
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.cloth-products .card-wrapper > .card a img {
+    border-radius: 20px;
+}
+
+.cloth-products .card-wrapper > .card a img {
+    border-radius: 20px;
 }
 
 .cloth-products .card-wrapper .card > div:first-of-type {
