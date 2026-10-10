@@ -329,10 +329,6 @@ hr {
     border-radius: 20px;
 }
 
-.cloth-products .card-wrapper > .card a img {
-    border-radius: 20px;
-}
-
 .cloth-products .card-wrapper .card > div:first-of-type {
     gap: 13px;
 }
@@ -403,6 +399,16 @@ footer .latest-offer .newsletter {
 footer .latest-offer > div {
     flex-direction: column;
     gap: 14px;
+}
+
+footer .latest-offer > div .mail > img {
+    width: 20.25px;
+    height: 15.75px;
+}
+
+footer .latest-offer > div .mail {
+    display: flex;
+    align-items: center;
 }
 
 footer .latest-offer .newsletter {
