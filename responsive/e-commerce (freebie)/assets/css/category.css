@@ -1,4 +1,5 @@
-/* ===== main ===== */
+                                        /* ===== main ===== */
+/* ===== filter section ===== */
 .section-2 {
     display: flex;
 }
@@ -8,10 +9,11 @@
     border-radius: 20px;
     border: 1px solid rgba(0,0,0, 0.1);
     padding: 20px 24px;
-    margin: 24px 20px 0;
+    margin: 24px 20px 0 0;
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 1279px;
 }
 
 .section-2 .filter-view > div:not(.price, .dress-style, .color) {
@@ -171,5 +173,82 @@
 
 .section-2 .filter-view .dress-style .style-options > a {
     margin-top: 20px;
-    display: inline-block;
+    display: block;
+}
+
+/* ===== cloth section ===== */
+.casual-product .product-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.casual-product .product-filter div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.casual-product .product-filter div > div {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.casual-product .product-filter div > div p {
+    font-weight: 500;
+}
+
+.casual-product hr {
+    margin: 32px 0 20px;
+}
+
+.casual-product .product-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.casual-product .product-navigation .number {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.casual-product .product-navigation .number > p:first-of-type {
+    background-color: rgba(0,0,0, 0.06);
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+}
+
+.casual-product .product-navigation .number > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casual-product .product-navigation > div:first-of-type,
+.casual-product .product-navigation > div:last-of-type {
+    width: 110px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    border: 1px solid rgba(0,0,0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.casual-product .product-navigation > div:first-of-type img,
+.casual-product .product-navigation > div:last-of-type img {
+    width: 14px;
+    height: 14px;
+}
+
+/* ===== footer ===== */
+.category {
+    margin-top: 140px;
 }
