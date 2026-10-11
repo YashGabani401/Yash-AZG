@@ -243,6 +243,11 @@ hr {
     color: #000000;
 }
 
+.opa-font20 {
+    font-size: 20px;
+    color: rgba(0,0,0, 0.6)
+}
+
                                         /* ===== header ===== */
 /* ===== logo ===== */
 .nav-bar {

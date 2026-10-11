@@ -18,14 +18,23 @@ h1 {
 
 .cloth-view {
     width: 715px;
+}
+
+.cloth-view,
+.order-summary {
     padding: 20px 24px;
     border-radius: 20px;
     border: 1px solid rgba(0,0,0, 0.1);
 }
 
-.wrapper hr {
+
+.cloth-view hr {
     margin: 24px 0;
     border-top: 1px solid rgba(0,0,0, 0.1);
+}
+
+.order-summary hr {
+    margin: 20px 0;
 }
 
 .cloth-card {
@@ -48,7 +57,6 @@ h1 {
     gap: 20px;
     background-color: #F0F0F0;
     width: 126px;
-    height: 44px;
     border-radius: 62px;
     padding: 12px 20px;
 }
@@ -69,4 +77,80 @@ h1 {
 .cloth-view > .cloth-card:last-of-type > img:first-of-type {
     width: 124px;
     height: 124px;
+}
+
+/* ===== order summary ===== */
+.order-summary {
+    width: 505px;
+    height: 458px;
+}
+
+.order-summary > div:first-of-type {
+    margin: 24px 0 20px;
+}
+
+.order-summary > div:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.order-summary > div:not(:last-of-type) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary > div:nth-of-type(5) > div div:first-of-type {
+    display: flex;
+    gap: 12px;
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    padding: 12px 16px;
+    width: 326px;
+}
+
+.order-summary > div:nth-of-type(5) > div div:last-of-type {
+    background-color: #000000;
+    width: 119px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.order-summary > div:nth-of-type(5) > div div:first-of-type,
+.order-summary > div:nth-of-type(5) > div div:last-of-type {
+    display: flex;
+    gap: 12px;
+    border-radius: 62px;
+    padding: 12px 16px;
+}
+
+.order-summary > div:nth-of-type(6) {
+    border-radius: 62px;
+    background-color: #000000;
+    padding: 16px 54px;
+    width: 457px;
+    display: flex;
+    gap: 12px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summary > div:nth-of-type(6) img {
+    width: 15.76px;
+    height: 18.75px;
+}
+
+.order-summary > div:nth-of-type(5) > div {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.order-summary .total p:first-of-type {
+    font-size: 20px;
+}
+
+/* ==== footer ===== */
+.cart {
+    margin-top: 165px;
 }
