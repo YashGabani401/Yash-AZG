@@ -6,36 +6,18 @@ h1 {
     font-size: 40px;
 }
                                         /* ===== main ===== */
-.navigation img {
+.navigation div img {
     width: 16px;
     height: 16px;
-}
+}                                        
 
-.navigation {
-    display: flex;
-    gap: 12px;
-}
-
-.navigation > div:first-of-type {
-    display: flex;
-    gap: 4px;
-}
-
-/* ===== cloth-view ==== */
 .wrapper {
     display: flex;
-}
-
-.wrapper .cloth-view > div {
-    display: flex;
-}
-
-.wrapper .cloth-view {
-    width: 715px;
-    display: block;
+    gap: 20px;
 }
 
 .cloth-view {
+    width: 715px;
     padding: 20px 24px;
     border-radius: 20px;
     border: 1px solid rgba(0,0,0, 0.1);
@@ -43,24 +25,48 @@ h1 {
 
 .wrapper hr {
     margin: 24px 0;
+    border-top: 1px solid rgba(0,0,0, 0.1);
 }
 
-.cloth-view .cloth-card {
+.cloth-card {
     display: flex;
     gap: 16px;
-    align-items: center;
 }
 
-.cloth-view > div:nth-of-type(3) > img:first-of-type {
+.cloth-card > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cloth-card > div {
+    flex-grow: 1;
+}
+
+.cloth-card > div > div:last-of-type > div {
+    display: flex;
+    gap: 20px;
+    background-color: #F0F0F0;
+    width: 126px;
+    height: 44px;
+    border-radius: 62px;
+    padding: 12px 20px;
+}
+
+.cloth-card > div > div img {
+    width: 20px;
+    height: 20px;
+}
+
+.cloth-card > div > p:first-of-type {
+    margin: 2px 0 4px;
+}
+
+.cloth-card > div > div > p:first-of-type {
+    margin-top: 15px;
+}
+
+.cloth-view > .cloth-card:last-of-type > img:first-of-type {
     width: 124px;
     height: 124px;
-}
-
-.cloth-view > div > div {
-    display: flex;
-}
-
-.cloth-view > div > div:last-of-type > div div {
-    display: flex;
-    
 }
