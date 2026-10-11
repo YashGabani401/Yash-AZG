@@ -110,6 +110,13 @@ li {
     padding: 6px 14px;
 }
 
+/* ===== hover effects ===== */
+li:hover {
+    font-weight: 500;
+    transition: 0.3s all ease;
+    transform: scale(1.1);
+}
+
                                         /* ===== classes ===== */
 .h-heading,
 .h-short,
