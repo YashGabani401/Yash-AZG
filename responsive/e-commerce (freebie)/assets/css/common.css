@@ -69,12 +69,15 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    transition: 0.3s all ease-in;
 }
 
 li {
-    list-style-type: none;
+    list-style-type: none;  
+    transition: 0.3s all ease-in;
 }
 
+                                        /* ===== classes ===== */
 .offer-bar {
     display: flex;
     flex-direction: row;
@@ -110,14 +113,6 @@ li {
     padding: 6px 14px;
 }
 
-/* ===== hover effects ===== */
-li:hover {
-    font-weight: 500;
-    transition: 0.3s all ease;
-    transform: scale(1.1);
-}
-
-                                        /* ===== classes ===== */
 .h-heading,
 .h-short,
 .m-heading,
@@ -255,6 +250,133 @@ hr {
     color: rgba(0,0,0, 0.6)
 }
 
+.shop-icon,
+.account-icon,
+.icons img,
+.n-btn,
+.m-btn,
+.h-btn,
+img,
+.card-wrapper > div,
+.w-btn {
+    transition: 0.3s all ease-in;
+}
+
+.card-wrapper > div > h3 {
+    z-index: 1;
+}
+
+/* ===== hover effects ===== */
+img:hover:not(.hero-section img, .card-wrapper > div, .icons img),
+.card-wrapper > div:hover,
+.logo:hover,
+.shop-icon:hover,
+.account-icon:hover,
+.w-btn:hover,
+.n-btn:hover,
+.m-btn:hover,
+.h-btn:hover,
+.icons2 img:hover,
+.icons img:hover,
+footer li:hover,
+a:hover:not(footer a, .pre),
+li:hover:not(footer li) {
+    transition: 0.3s all ease-in;
+}
+
+input:hover,
+.normal:hover,
+img:hover:not(.hero-section img, .card-wrapper > div, .icons img),
+.card-wrapper > div:hover,
+.w-btn:hover,
+.n-btn:hover,
+.icons2 img:hover {
+    cursor: pointer;
+}
+
+li:hover:not(footer li) {
+    font-weight: 500;
+    transform: scale(1.1);
+    color: #000000;
+}
+
+a:hover:not(footer a, .pre) {
+    font-weight: 500;
+    color: #000000;
+}
+
+header li a:hover {
+    font-weight: 300 !important;
+}
+
+footer li:hover {
+    color: rgba(0,0,0, 1);
+    transition: 0.1s all ease-in;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+.icons2 img:hover {
+    transform: scale(1.2) !important;
+}
+
+.h-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    outline: 2px solid black;
+}
+
+.m-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.n-btn:hover {
+    background-color: #000000 !important;
+    color: #ffffff;
+    outline: 2px solid white;
+}
+
+.w-btn:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    outline: 2px solid black;
+}
+
+.f-btn:hover {
+    background-color: #F0F0F0 !important;
+    outline: none;
+}
+
+.r-btn:hover {
+    background-color: #F0F0F0;
+}
+
+.w-btn:hover img,
+.n-btn:hover img {
+    filter: invert(1) brightness(1);
+}
+
+.shop-icon:hover,
+.account-icon:hover {
+    transform: scale(1.1) !important;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+img:hover:not(.hero-section img, .card-wrapper > div, .icons img),
+.card-wrapper > div:hover {
+    transform: scale(1.05);
+}
+
+.normal:hover {
+    color: rgba(0,0,0, 0.6);
+}
+
                                         /* ===== header ===== */
 /* ===== logo ===== */
 .nav-bar {
@@ -290,6 +412,7 @@ hr {
     font-weight: 700;
     font-size: 32px;
     font-family: 'Integral CF', sans-serif;
+    transition: 0.3s all ease-in;
 }
 
 .nav-bar .nav-links span {

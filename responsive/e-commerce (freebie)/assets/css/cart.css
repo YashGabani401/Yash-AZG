@@ -5,6 +5,8 @@ h1 {
     font-weight: 700;
     font-size: 40px;
 }
+
+/* ===== hover effects ===== */
                                         /* ===== main ===== */
 .navigation div img {
     width: 16px;
@@ -26,7 +28,6 @@ h1 {
     border-radius: 20px;
     border: 1px solid rgba(0,0,0, 0.1);
 }
-
 
 .cloth-view hr {
     margin: 24px 0;
@@ -74,7 +75,7 @@ h1 {
     margin-top: 15px;
 }
 
-.cloth-view > .cloth-card:last-of-type > img:first-of-type {
+.cloth-view > div:last-of-type .pant-image {
     width: 124px;
     height: 124px;
 }

@@ -79,6 +79,7 @@
     top: 86px;
 }
 
+/* ===== swiper slider ===== */
 .slider {
     display: flex;
     align-items: center;
@@ -90,7 +91,23 @@
 
 .slider div {
     display: flex;
-    gap: 106px;
+    gap: 0;
+}
+
+.slider {
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ===== main section-1 ===== */
@@ -148,4 +165,71 @@
 
 .main-3 .card-wrapper > div {
     position: relative;
+}
+
+                                        /* ===== media query ===== */
+@media (min-width: 320px) and (max-width: 967.98px) {
+    html {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .offer-bar img {
+        display: none;
+    }
+
+    .offer-bar {
+        width: 100%;
+        max-width: 100%;
+        gap: 0;
+        padding: 9px 44.5px;
+    }
+
+    .offer-bar p {
+        font-size: 9px;
+    }
+
+    .nav-bar {
+        padding: 23px 16px;
+    }
+
+    .nav-bar .nav-links,
+    .nav-bar div:nth-of-type(1) {
+        display: none;
+    }
+
+    .nav-bar .search-icon {
+        width: 20.27px;
+        height: 20.27px;
+        filter: brightness(0) saturate(0) !important;
+        color: #000000;
+    }
+
+    .nav-bar .logo {
+        font-size: 25.2px;
+    }
+
+    .nav-bar .shop-icon,
+    .nav-bar .account-icon {
+        width: 20.25px;
+        height: 20.25px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+        max-width: 100%;
+        width: 100%;
+        margin: 40px 0 20px;
+    }
+
+    .hero-section {
+        display: block;
+        padding: 40px 59px 0 16px;
+    }
+
+    .container {
+        max-width: 100%;
+        height: 100%;
+    }
 }

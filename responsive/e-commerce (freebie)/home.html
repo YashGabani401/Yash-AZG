@@ -6,6 +6,10 @@
     <title>E-commerce (Freebie)</title>
     <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+
+    <!-- ===== swiper slider ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -21,10 +25,10 @@
 
         <!-- ===== navigation bar ===== -->
         <section class="nav-bar">
-            <a aria-colcount="txt-upper" href="home.html" class="logo">shop.co</a>
+            <a class="txt-upper logo" href="home.html" class="logo">shop.co</a>
             <nav class="nav-links">
                 <ul class="txt-cap">
-                    <li><a href="">shop<span><img src="./assets/plugins/icons/arrow-down.png"></span></a></li>
+                    <li><a href="category.html">shop<span><img src="./assets/plugins/icons/arrow-down.png"></span></a></li>
                     <li><a href="">on sale</a></li>
                     <li><a href="">new arrivals</a></li>
                     <li><a href="">brands</a></li>
@@ -38,7 +42,7 @@
             </div>
 
             <div>
-                <a href="category.html"><img class="shop-icon" src="./assets/plugins/icons/cart.png" alt="shop-icon"></a>
+                <a href="cart.html"><img class="shop-icon" src="./assets/plugins/icons/cart.png" alt="shop-icon"></a>
                 <a href=""><img class="account-icon" src="./assets/plugins/icons/account.png" alt="useraccount-icon"></a>
             </div>
         </section>
@@ -53,7 +57,7 @@
             <img class="star" src="./assets/plugins/icons/star.png" alt="star">
             <img class="big-star" src="./assets/plugins/icons/big-star.png" alt="big-star">
             <p class="h-long">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-            <a class="txt-cap h-btn" href="">shop now</a>
+            <a class="txt-cap h-btn r-btn" href="category.html">shop now</a>
             <!-- ===== counter ===== -->
             <section class="counter">
                 <div>
@@ -72,15 +76,16 @@
         </section>
 
         <!-- ===== slider ===== -->
-        <section class="slider">
-            <div>
-                <img src="./assets/plugins/icons/versace.png" alt="brand-name">
-                <img src="./assets/plugins/icons/zara.png" alt="brand-name">
-                <img src="./assets/plugins/icons/gucci.png" alt="brand-name">
-                <img src="./assets/plugins/icons/prada.png" alt="brand-name">
-                <img src="./assets/plugins/icons/calvin-klein.png" alt="brand-name">
+        <section class="slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/plugins/icons/versace.png" alt="brand-name"></div>
+                <div class="swiper-slide"><img src="./assets/plugins/icons/zara.png" alt="brand-name"></div>
+                <div class="swiper-slide"><img src="./assets/plugins/icons/gucci.png" alt="brand-name"></div>
+                <div class="swiper-slide"><img src="./assets/plugins/icons/prada.png" alt="brand-name"></div>
+                <div class="swiper-slide"><img src="./assets/plugins/icons/calvin-klein.png" alt="brand-name"></div>
             </div>
         </section>
+
 
         <section class="main-1 cloth-products">
             <h2 class="txt-upper m-heading">new arrivals</h2>
@@ -210,22 +215,26 @@
         <section class="main-3">
             <h2 class="txt-upper m-heading">browse by dress style</h2>
 
+            <!-- ===== different types of clothes ===== -->
             <section class="card-wrapper">
                 <div>
-                    <h3 class="txt-cap m3-heading">casual</h3>
-                    <a href="product.html"><img src="./assets/images/home/image-10.png" alt="cloth"></a>
+                    <h3 class="txt-cap m3-heading"><a href="category.html">casual</a></h3>
+                    <a href="category.html"><img src="./assets/images/home/image-10.png" alt="cloth"></a>
                 </div>
+
                 <div>
-                    <h3 class="txt-cap m3-heading">formal</h3>
-                    <a href="product.html"><img src="./assets/images/home/image-11.png" alt="cloth"></a>
+                    <h3 class="txt-cap m3-heading"><a href="category.html">formal</a></h3>
+                    <a href="category.html"><img src="./assets/images/home/image-11.png" alt="cloth"></a>
                 </div>
+
                 <div>
-                    <h3 class="txt-cap m3-heading">party</h3>
-                    <a href="product.html"><img src="./assets/images/home/image-12.png" alt="cloth"></a>
+                    <h3 class="txt-cap m3-heading"><a href="category.html">party</a></h3>
+                    <a href="category.html"><img src="./assets/images/home/image-12.png" alt="cloth"></a>
                 </div>
+
                 <div>
-                    <h3 class="txt-cap m3-heading">gym</h3>
-                    <a href="product.html"><img src="./assets/images/home/image-13.png" alt="cloth"></a>
+                    <h3 class="txt-cap m3-heading"><a href="category.html">gym</a></h3>
+                    <a href="category.html"><img src="./assets/images/home/image-13.png" alt="cloth"></a>
                 </div>
             </section>
         </section>
@@ -300,7 +309,7 @@
                         <p class="f-search-text">Enter your email address</p>
                     </div>
 
-                    <div class="newsletter">
+                    <div class="newsletter n-btn">
                         <p class="f-heading-short">Subscribe to Newsletter</p>
                     </div>
                 </div>
@@ -310,7 +319,7 @@
         <!-- ===== section-2 ===== -->
         <section>
             <div>
-                <h2 class="txt-upper f2-heading">shop.co</h2>
+                <h2 class="txt-upper f2-heading logo"><a href="home.html">shop.co</h2>
 
                 <p class="f2-long">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
 
@@ -328,10 +337,10 @@
                     <h3 class="txt-upper f3-heading-short">company</h3>
                     <nav>
                         <ul class="txt-cap f3-short">
-                            <li>about</li>
-                            <li>features</li>
-                            <li>works</li>
-                            <li>career</li>
+                            <li><a href="">about</a></li>
+                            <li><a href="">features</a></li>
+                            <li><a href="">works</a></li>
+                            <li><a href="">career</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -340,10 +349,10 @@
                     <h3 class="txt-upper f3-heading-short">help</h3>
                     <nav>
                         <ul class="txt-cap f3-short">
-                            <li>customer support</li>
-                            <li>delivery details</li>
-                            <li>terms & conditions</li>
-                            <li>privacy policy</li>
+                            <li><a href="">customer support</a></li>
+                            <li><a href="">delivery details</a></li>
+                            <li><a href="">terms & conditions</a></li>
+                            <li><a href="">privacy policy</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -352,10 +361,10 @@
                     <h3 class="txt-upper f3-heading-short">faq</h3>
                     <nav>
                         <ul class="txt-cap f3-short">
-                            <li>account</li>
-                            <li>manage deliveries</li>
-                            <li>orders</li>
-                            <li>payments</li>
+                            <li><a href="">account</a></li>
+                            <li><a href="">manage deliveries</a></li>
+                            <li><a href="">orders</a></li>
+                            <li><a href="">payments</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -364,10 +373,10 @@
                     <h3 class="txt-upper f3-heading-short">resources</h3>
                     <nav>
                         <ul class="f3-short">
-                            <li>Free eBooks</li>
-                            <li>Development Tutorial</li>
-                            <li>How to - Blog</li>
-                            <li>Youtube Playlist</li>
+                            <li><a href="">Free eBooks</a></li>
+                            <li><a href="">Development Tutorial</a></li>
+                            <li><a href="">How to - Blog</a></li>
+                            <li><a href="">Youtube Playlist</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -380,14 +389,34 @@
             <p class="copyright">Shop.co © 2000-2023, All Rights Reserved</p>
 
             <!-- ===== payment cards ===== -->
-            <div>
-                <img src="./assets/plugins/icons/visa.png" alt="visa-icon">
-                <img src="./assets/plugins/icons/mastercard.png" alt="mastercard-icon">
-                <img src="./assets/plugins/icons/paypal.png" alt="paypal-icon">
-                <img src="./assets/plugins/icons/apay.png" alt="applepay-icon">
-                <img src="./assets/plugins/icons/gpay.png" alt="googlepay-icon">
+            <div class="icons">
+                <a href=""><img src="./assets/plugins/icons/visa.png" alt="visa-icon"></a>
+                <a href=""><img src="./assets/plugins/icons/mastercard.png" alt="mastercard-icon"></a>
+                <a href=""><img src="./assets/plugins/icons/paypal.png" alt="paypal-icon"></a>
+                <a href=""><img src="./assets/plugins/icons/apay.png" alt="applepay-icon"></a>
+                <a href=""><img src="./assets/plugins/icons/gpay.png" alt="googlepay-icon"></a>
             </div>
         </section>
     </footer>
+
+    <!-- ===== swiper slider ===== -->
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+        const swiper = new Swiper(...)
+    </script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          loopedSlides: 5,
+          slidesPerView: 4,
+          speed: 10000,
+          allowTouchMove: false,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+          }
+        });
+    </script>
 </body>
 </html>
