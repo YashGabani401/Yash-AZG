@@ -330,7 +330,7 @@ footer li:hover {
 
 .m-btn:hover {
     background-color: #000000;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .n-btn:hover {
