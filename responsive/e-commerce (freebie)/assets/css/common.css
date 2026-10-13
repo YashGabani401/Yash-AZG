@@ -198,6 +198,31 @@ li {
 .m-btn {
     border-radius: 62px;
     padding: 16px 54px;
+    text-align: center;
+}
+
+.w-210 {
+    width: 210px;
+}
+
+.w-218 {
+    width: 218px;
+}
+
+.w-166 {
+    width: 166px;
+}
+
+.w-230 {
+    width: 230px;
+}
+
+.w-247 {
+    width: 247px;
+}
+
+.w-86 {
+    width: 86px;
 }
 
 .m-btn {
