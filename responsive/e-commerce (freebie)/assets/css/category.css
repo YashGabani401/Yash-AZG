@@ -171,9 +171,16 @@
     margin-top: 20px;
 }
 
-.section-2 .filter-view .dress-style .style-options > a {
+.section-2 .filter-view .dress-style .style-options > div:last-of-type a {
     margin-top: 20px;
-    display: block;
+    padding: 14.5px 81.5px;
+    width: 72px;
+}
+
+.section-2 .filter-view .dress-style .style-options > div:last-of-type {
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 /* ===== cloth section ===== */
