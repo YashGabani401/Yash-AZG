@@ -101,45 +101,6 @@ if (typeof smallest1 === 'number' && typeof smallest2 === 'number' && typeof sma
     console.log('7. enter a valid number');
 }
 
-// 8. divisible by 2
-// const divisible = 0;
-
-// if (typeof divisible === 'number') {
-//     if (divisible / 2 === 0) {
-//         console.log('8. number is not divisible by 2');
-//     } else {
-//         console.log('8. number is divisible by 2');
-//     }
-// } else {
-//     console.log('8. enter a valid number');
-// }
-
-// 9. divisible by 5
-// const divisible = 0;
-
-// if (typeof divisible === 'number') {
-//     if (divisible / 5 === 0) {
-//         console.log('9. number is not divisible by 5');
-//     } else {
-//         console.log('9. number is divisible by 5');
-//     }
-// } else {
-//     console.log('9. enter a valid number');
-// }
-
-// 10. divisible by both 3 and 5
-// const divisible = 0;
-
-// if (typeof divisible === 'number') {
-//     if (divisible / 3 === 0 && divisible / 5 === 0) {
-//         console.log('10. number is not divisible by 3 and 5');
-//     } else {
-//         console.log('10. number is divisible by 3 and 5');
-//     }
-// } else {
-//     console.log('10. enter a valid number');
-// }
-
 // 11. eligible for voting
 const age = 18;
 
@@ -274,9 +235,6 @@ if (typeof between === 'number') {
     console.log('19. enter a valid number');
 }
 
-// 20. leap year
-
-
 // 21. day name
 const day = 1;
 
@@ -357,9 +315,6 @@ if (typeof month === 'number') {
 } else {
     console.log('22. enter a valid number');
 }
-
-// 23. calculator
-
 
 // 24. single digit or double digit
 const digit = 1;
