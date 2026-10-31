@@ -101,6 +101,45 @@ if (typeof smallest1 === 'number' && typeof smallest2 === 'number' && typeof sma
     console.log('7. enter a valid number');
 }
 
+// 8. divisible by 2
+const divisible2 = 1;
+
+if (typeof divisible2 === 'number') {
+    if (divisible2 % 2 === 0) {
+        console.log('8. yes, ' + divisible2 + ' number can be divisible by 2');
+    } else {
+        console.log('8. no, ' + divisible2 + " number can't be divisible by 2");
+    }
+} else {
+    console.log('8. enter a valid number');
+}
+
+// 9. divisible by 5
+const divisible5 = 1;
+
+if (typeof divisible5 === 'number') {
+    if (divisible5 % 5 === 0) {
+        console.log('9. yes, ' + divisible5 + ' number can be divisible by 5');
+    } else {
+        console.log('9. no, ' + divisible5 + " number can't be divisible by 5");
+    }
+} else {
+    console.log('9. enter a valid number');
+}
+
+// 10. divisible by 3 and 5
+const divisible = 1;
+
+if (typeof divisible === 'number') {
+    if (divisible % 3 === 0 && divisible % 5 === 0) {
+        console.log('10. yes, ' + divisible + ' number can be divisible by 3 and 5');
+    } else {
+        console.log('10. no, ' + divisible + " number can't be divisible by 3 and 5");
+    }
+} else {
+    console.log('10. enter a valid number');
+}
+
 // 11. eligible for voting
 const age = 18;
 
@@ -235,6 +274,19 @@ if (typeof between === 'number') {
     console.log('19. enter a valid number');
 }
 
+// 20. leap year
+const leapYear = 2026;
+
+if (typeof leapYear === 'number') {
+    if (leapYear % 4 === 0 | leapYear % 400 === 0) {
+        console.log('20. yes, ' + leapYear + ' is a leap year');
+    } else {
+        console.log('20. no, ' + leapYear + ' is not a leap year');
+    }
+} else {
+    console.log('20. enter a valid number');
+}
+
 // 21. day name
 const day = 1;
 
@@ -314,6 +366,32 @@ if (typeof month === 'number') {
     }
 } else {
     console.log('22. enter a valid number');
+}
+
+// 23. calculator (+, -, *, /)
+const value1 = 1;
+const value2 = 2;
+const calculator = '+'
+
+if (typeof calculator === 'string') {
+    switch (calculator) {
+        case '+':
+            console.log('23. ' + (value1 + value2));
+            break;
+        case '-':
+            console.log('23. ' + (value1 - value2));
+            break;
+        case '*':
+            console.log('23. ' + (value1 * value2));
+            break;
+        case '/':
+            console.log('23. ' + (value1 / value2));
+            break;
+        default:
+            console.log('23. enter a valid operator from (+, -, *, /)');
+    }
+} else {
+    console.log('23. enter a valid number');
 }
 
 // 24. single digit or double digit
